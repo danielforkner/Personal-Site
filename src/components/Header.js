@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css';
 
 const Header = () => {
   return (
@@ -7,11 +6,21 @@ const Header = () => {
       <div className="content-wrapper">
         <div className="content">
           <h2>Daniel Forkner</h2>
-          <p>Professional Software Engineer</p>
-          <p>
-            Proficient with React | JavaScript | Node & Express | PostgreSQL
-          </p>
-          <p>Familiar with C# | .NET</p>
+          <h3>Professional Software Engineer</h3>
+          <div className="skills-list">
+            <p>
+              <span className="skill-title">Proficient:</span>{' '}
+              <span className="skill">React</span> |{' '}
+              <span className="skill">JavaScript</span> |{' '}
+              <span className="skill">Node & Express</span> |{' '}
+              <span className="skill">PostgreSQL</span>
+            </p>
+            <p>
+              <span className="skill-title">Familiar:</span>{' '}
+              <span className="skill">C#</span> |{' '}
+              <span className="skill">.NET</span>
+            </p>
+          </div>
         </div>
       </div>
     </header>

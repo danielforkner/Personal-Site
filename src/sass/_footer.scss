@@ -1,0 +1,18 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.footer-center {
+  text-align: center;
+  display: flex;
+}
+.footer-right {
+  position: absolute;
+  right: 15px;
+}
