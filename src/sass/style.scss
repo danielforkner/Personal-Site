@@ -1,6 +1,16 @@
 // animations from animate.style
 // process with the command `sass src/sass/style.scss src/index.css --watch`
 
+@import 'mixin';
+
+$desktopL: 1200px;
+$desktopS: 992px;
+$allMobile: 991px;
+$tablet: 768px;
+$mobileL: 425px;
+$mobileM: 375px;
+$mobileS: 320px;
+
 * {
   margin: 0;
   padding: 0;

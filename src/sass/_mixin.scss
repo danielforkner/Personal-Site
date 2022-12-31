@@ -1,0 +1,32 @@
+// $desktopL: 1200px;
+// $desktopS: 992px;
+// $allMobile: 991px;
+// $tablet: 768px;
+// $mobileL: 425px;
+// $mobileM: 375px;
+// $mobileS: 320px;
+
+// media queries
+@mixin allMobile {
+  @media screen and (max-width: $allMobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktopS {
+  @media screen and (min-width: $desktopS) {
+    @content;
+  }
+}
+
+@mixin desktopL {
+  @media screen and (min-width: $desktopL) {
+    @content;
+  }
+}
