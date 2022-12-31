@@ -1,0 +1,32 @@
+header {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+header .content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 425px;
+  padding: 40px 15px;
+}
+header .content h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  header .content-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  header .content {
+    text-align: left;
+    max-width: 425px;
+    padding: 50px 0;
+    margin: 0 30px;
+  }
+  header .content h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
