@@ -92,7 +92,7 @@ header .skill {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .footer-center {
@@ -102,7 +102,12 @@ header .skill {
 
 .footer-right {
   position: absolute;
+  cursor: pointer;
   right: 15px;
+}
+
+.footer-hide {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

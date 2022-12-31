@@ -14,5 +14,9 @@
 }
 .footer-right {
   position: absolute;
+  cursor: pointer;
   right: 15px;
+}
+.footer-hide {
+  display: none;
 }
