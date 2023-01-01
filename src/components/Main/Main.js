@@ -1,6 +1,6 @@
 import React from 'react';
 import Contact from './Contact';
-import Projects from './Projects';
+import Projects from './Projects/Projects';
 import Resume from './Resume';
 import Aside from './Aside';
 import About from './About';

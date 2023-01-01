@@ -10,6 +10,10 @@ body .aside-open {
   overflow: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   width: 100%;
   border-bottom: 1px solid black;
@@ -96,9 +100,23 @@ main {
   height: 100vh;
 }
 main .content {
+  padding: 60px 0 80px;
   width: 80%;
   float: right;
   background-color: white;
+}
+main aside {
+  position: sticky;
+  top: 0;
+}
+@media screen and (max-width: 991px) {
+  main .content {
+    width: 100%;
+    float: none;
+  }
+  main aside {
+    display: none;
+  }
 }
 
 aside {
@@ -161,7 +179,15 @@ aside.active {
     z-index: 10;
   }
 }
+nav {
+  margin: 70px 0 0;
+  padding: 0 0 0 20%;
+}
 nav a {
+  color: #5b656f;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 30px;
   text-decoration: none;
 }
 nav a.active {

@@ -3,8 +3,22 @@ main {
   background-color: cornsilk;
   height: 100vh;
   .content {
+    padding: 60px 0 80px;
     width: 80%;
     float: right;
     background-color: white;
+  }
+  aside {
+    position: sticky;
+    top: 0;
+  }
+  @include allMobile {
+    .content {
+      width: 100%;
+      float: none;
+    }
+    aside {
+      display: none;
+    }
   }
 }
