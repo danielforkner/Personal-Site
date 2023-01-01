@@ -18,10 +18,14 @@ $mobileS: 320px;
 
 body {
   width: 100%;
-  height: 100%;
+  .aside-open {
+    overflow: hidden;
+  }
 }
 
 // import
 @import 'header';
 @import 'main';
+@import 'aside';
+@import 'nav';
 @import 'footer';

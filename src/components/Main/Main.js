@@ -3,15 +3,18 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Resume from './Resume';
 import Aside from './Aside';
+import About from './About';
 
 const Main = () => {
   return (
     <main>
-      Main
       <Aside />
-      <Projects />
-      <Resume />
-      <Contact />
+      <div className="content">
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
+      </div>
     </main>
   );
 };
