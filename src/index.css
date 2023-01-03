@@ -110,6 +110,9 @@ main .content article {
   padding: 0 20px;
   margin: 0 0 20px 0;
 }
+main .content article .icon {
+  width: 50px;
+}
 main aside {
   position: sticky;
   top: 0;
@@ -184,7 +187,6 @@ aside {
   float: left;
 }
 aside.active {
-  position: absolute;
   display: block;
   top: 0;
   left: 0;
@@ -204,6 +206,9 @@ aside.active {
   height: 2px;
   background-color: #000;
   transition: 0.2s ease-in-out;
+}
+.aside-toggle.fixed {
+  position: fixed;
 }
 .aside-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -247,7 +252,7 @@ nav li a {
   color: #5b656f;
   font-weight: 500;
   font-size: 1.15rem;
-  line-height: 30px;
+  line-height: 40px;
   text-decoration: none;
 }
 nav li a.active {

@@ -2,7 +2,7 @@ aside {
   width: 20%;
   float: left;
   &.active {
-    position: absolute;
+    // position: absolute;
     display: block;
     top: 0;
     left: 0;
@@ -21,6 +21,11 @@ aside {
     height: 2px;
     background-color: #000;
     transition: 0.2s ease-in-out;
+  }
+  &.fixed {
+    position: fixed;
+    // float: right;
+    // margin-top: 15px;
   }
   &.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);

@@ -2,11 +2,10 @@ import React from 'react';
 
 const Algovisualizer = () => {
   return (
-    <img
-      src="/public/images/sorting1.png"
-      alt="A page showing the Algovisualizer project"
-      style={{ width: '100%' }}
-    />
+    <section id="projects-algovisualizer">
+      <h3 className="project">Hello from Algovisualizer</h3>
+      <img className="icon" src="/public/images/algo/icon.png" alt="icon" />
+    </section>
   );
 };
 
