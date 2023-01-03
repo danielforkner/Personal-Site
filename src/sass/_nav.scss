@@ -1,14 +1,28 @@
 nav {
   margin: 70px 0 0;
   padding: 0 0 0 20%;
-  a {
-    color: #5b656f;
-    font-weight: 500;
-    font-size: 1.15rem;
-    line-height: 30px;
-    text-decoration: none;
-  }
-  a.active {
-    color: rgb(0, 0, 0);
+  li {
+    a {
+      color: #5b656f;
+      font-weight: 500;
+      font-size: 1.15rem;
+      line-height: 30px;
+      text-decoration: none;
+    }
+    a.active {
+      color: rgb(0, 0, 0);
+    }
+    ul {
+      li {
+        a {
+          margin: 0 0 0 10px;
+          color: #3e5163;
+          // font-weight: 500;
+          font-size: 1rem;
+          line-height: 25px;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

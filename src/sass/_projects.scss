@@ -1,32 +1,61 @@
 #projects {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 1rem;
-        margin: 2rem;
-        .item {
-            background: black;
-            padding: 3px;
-            display: grid;
-            place-items: center;
-            &::before {
-              // apsect ratio
-              content: "";
-              display: block;
-              padding-bottom: 100%;
-              grid-area: 1 / 1 / 2 / 2;
-            }
-            img {
-            width: 100%;
-            grid-area: 1 / 1 / 2 / 2; 
-            }
-            &:hover {
-                background: cornsilk;
-                cursor: pointer;
-                img {
-                    filter: invert(1);
-                }
-            }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin: 2rem 0;
+    .item {
+      position: relative;
+      background: black;
+      padding: 3px;
+      display: grid;
+      place-items: center;
+      &::before {
+        // apsect ratio
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: 0.5s ease;
+        .text {
+          color: rgb(0, 0, 0);
+          background-color: cornsilk;
+          padding: 0.25rem;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
         }
+      }
+      img {
+        width: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      &:hover {
+        // background: cornsilk;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgb(255, 170, 0);
+        // img {
+        //   filter: invert(1);
+        // }
+        .overlay {
+          opacity: 1;
+        }
+      }
     }
+  }
 }

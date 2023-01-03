@@ -2,12 +2,16 @@ main {
   position: relative;
   background-color: cornsilk;
   height: 100%;
-  float:left;
+  float: left;
   .content {
     padding: 60px 0 80px;
     width: 80%;
     float: right;
     background-color: white;
+    article {
+      padding: 0 20px;
+      margin: 0 0 20px 0;
+    }
   }
   aside {
     position: sticky;

@@ -1,13 +1,7 @@
 import React from 'react';
 
 const Tetris = () => {
-  return (
-    <img
-      src="/public/images/fallingBlocks.png"
-      alt="A page showing the falling blocks game"
-      style={{ width: '100%' }}
-    />
-  );
+  return <h3 className="project">Hello from tetris</h3>;
 };
 
 export default Tetris;

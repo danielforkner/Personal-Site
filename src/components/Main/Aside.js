@@ -27,6 +27,18 @@ const Aside = () => {
             </li>
             <li>
               <a href="#Projects">Projects</a>
+              <ul>
+                <li>
+                  <a href="#CompaniesAPI">Companies API</a>
+                </li>
+                <li>
+                  <a href="#Algovisualizer">Algovisualizer</a>
+                </li>
+                <li>App Deployment Guide</li>
+                <li>Educational Podcast</li>
+                <li>Tetris</li>
+                <li>Snake</li>
+              </ul>
             </li>
             <li>
               <a href="#Resume">Resume</a>
