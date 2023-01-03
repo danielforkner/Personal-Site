@@ -13,9 +13,9 @@ const Aside = () => {
   return (
     <>
       <div onClick={handleToggle} className="aside-toggle">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
+        <span className="line line1"></span>
+        <span className="line line2"></span>
+        <span className="line line3"></span>
       </div>
       <aside>
         <nav>

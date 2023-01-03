@@ -2,6 +2,7 @@ main {
   position: relative;
   background-color: cornsilk;
   height: 100vh;
+  overflow: auto;
   .content {
     padding: 60px 0 80px;
     width: 80%;

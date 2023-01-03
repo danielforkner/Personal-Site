@@ -98,6 +98,7 @@ main {
   position: relative;
   background-color: cornsilk;
   height: 100vh;
+  overflow: auto;
 }
 main .content {
   padding: 60px 0 80px;
