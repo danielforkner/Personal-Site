@@ -1,0 +1,32 @@
+#projects {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        margin: 2rem;
+        .item {
+            background: black;
+            padding: 3px;
+            display: grid;
+            place-items: center;
+            &::before {
+              // apsect ratio
+              content: "";
+              display: block;
+              padding-bottom: 100%;
+              grid-area: 1 / 1 / 2 / 2;
+            }
+            img {
+            width: 100%;
+            grid-area: 1 / 1 / 2 / 2; 
+            }
+            &:hover {
+                background: cornsilk;
+                cursor: pointer;
+                img {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}

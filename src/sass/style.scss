@@ -1,5 +1,6 @@
 // animations from animate.style
-// process with the command `sass src/sass/style.scss src/index.css --watch`
+// process with the command 
+// sass src/sass/style.scss src/index.css --watch
 
 @import 'mixin';
 
@@ -29,6 +30,7 @@ ul {
 // import
 @import 'header';
 @import 'main';
+@import 'projects';
 @import 'aside';
 @import 'nav';
 @import 'footer';

@@ -1,8 +1,8 @@
 main {
   position: relative;
   background-color: cornsilk;
-  height: 100vh;
-  overflow: auto;
+  height: 100%;
+  float:left;
   .content {
     padding: 60px 0 80px;
     width: 80%;

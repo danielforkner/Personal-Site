@@ -97,8 +97,8 @@ header .skill {
 main {
   position: relative;
   background-color: cornsilk;
-  height: 100vh;
-  overflow: auto;
+  height: 100%;
+  float: left;
 }
 main .content {
   padding: 60px 0 80px;
@@ -118,6 +118,36 @@ main aside {
   main aside {
     display: none;
   }
+}
+
+#projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem;
+}
+#projects .grid .item {
+  background: black;
+  padding: 3px;
+  display: grid;
+  place-items: center;
+}
+#projects .grid .item::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  grid-area: 1/1/2/2;
+}
+#projects .grid .item img {
+  width: 100%;
+  grid-area: 1/1/2/2;
+}
+#projects .grid .item:hover {
+  background: cornsilk;
+  cursor: pointer;
+}
+#projects .grid .item:hover img {
+  filter: invert(1);
 }
 
 aside {
