@@ -2,7 +2,7 @@ import React from 'react';
 
 const CompaniesAPI = () => {
   return (
-    <section id="projects-companiesapi">
+    <div id="projects-companiesapi">
       <h3 className="project">Hello from CompaniesAPI</h3>
       <img
         className="icon"
@@ -10,7 +10,8 @@ const CompaniesAPI = () => {
         alt="icon"
         style={{ border: '1px solid black' }}
       />
-    </section>
+      <p>A work in progress that evolves with the needs of the classroom</p>
+    </div>
   );
 };
 

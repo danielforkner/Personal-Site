@@ -4,7 +4,7 @@ import React from 'react';
 
 const Deployment = () => {
   return (
-    <section id="projects-deployment">
+    <div id="projects-deployment">
       <h3 className="project">Hello from App Deployment Guide</h3>
       <img
         className="icon"
@@ -12,7 +12,7 @@ const Deployment = () => {
         alt="icon"
         style={{ filter: 'invert(1)', border: '1px solid black' }}
       />
-    </section>
+    </div>
   );
 };
 

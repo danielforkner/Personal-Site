@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -15,19 +17,19 @@ ul {
 }
 
 header {
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  border-bottom: 1px solid black;
-  background: url();
 }
 @media screen and (min-width: 1200px) {
   header {
-    height: 600px;
+    min-height: 600px;
   }
 }
 @media screen and (min-width: 768px) {
   header .content-wrapper {
     max-width: 768px;
-    margin: 0 auto;
+    margin: 25px auto 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -38,6 +40,7 @@ header {
 }
 header .content {
   text-align: center;
+  color: white;
   margin: 0 auto;
   max-width: 425px;
   padding: 40px 15px;
@@ -54,7 +57,7 @@ header .content {
   header .content {
     text-align: left;
     max-width: 600px;
-    padding: 235px 0;
+    padding: 135px 0;
     margin: 0 30px;
   }
 }
@@ -82,13 +85,70 @@ header .content h3 {
   font-weight: 200;
   font-style: italic;
 }
-header .skills-list {
+header .background-image {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/624b503dcf00e94df2b0f15b/1649102934873-PKAKG6A7WTI9WIZ9D164/landing-full-topleft-01.jpg?format=2500w");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#hero-border {
+  min-height: 10vh;
+  padding: 1rem 0;
+}
+#hero-border .border-content-wrapper {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #hero-border .border-content-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero-border .border-content-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+#hero-border .border-content-wrapper .border-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minMax(150px, 300px));
+  grid-gap: 1rem;
+  max-width: 425px;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  #hero-border .border-content-wrapper .border-content {
+    padding: 50px 0;
+    margin: 0 30px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero-border .border-content-wrapper .border-content {
+    padding: 135px 0;
+    margin: 0 30px;
+    max-width: 100%;
+  }
+}
+#hero-border .border-content-wrapper .border-content .content-right .skills-list {
   padding: 0.25rem 0;
 }
-header .skill-title {
+#hero-border .border-content-wrapper .border-content .content-right .skill-title {
   font-weight: 600;
 }
-header .skill {
+#hero-border .border-content-wrapper .border-content .content-right .skill {
   display: inline-block;
   animation: fadeInRight;
   animation-duration: 2s;
@@ -96,7 +156,7 @@ header .skill {
 
 main {
   position: relative;
-  background-color: cornsilk;
+  background-color: #e9e9ed;
   height: 100%;
   float: left;
 }
@@ -249,18 +309,19 @@ nav {
   padding: 0 0 0 20%;
 }
 nav li a {
-  color: #5b656f;
-  font-weight: 500;
+  color: #2f353c;
   font-size: 1.15rem;
   line-height: 40px;
   text-decoration: none;
 }
 nav li a.active {
-  color: rgb(0, 0, 0);
+  font-weight: 900;
+  color: #34373a;
+  text-decoration: underline;
 }
 nav li ul li a {
   margin: 0 0 0 10px;
-  color: #3e5163;
+  color: #596470;
   font-size: 1rem;
   line-height: 25px;
   text-decoration: none;

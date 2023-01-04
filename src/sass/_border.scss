@@ -1,0 +1,51 @@
+#hero-border {
+  min-height: 10vh;
+  //   background-color: gray;
+
+  padding: 1rem 0;
+  .border-content-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    @include tablet {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    @include desktopL {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .border-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minMax(150px, 300px));
+      grid-gap: 1rem;
+      max-width: 425px;
+      padding: 40px 15px;
+      margin: 0 auto;
+      @include tablet {
+        padding: 50px 0;
+        margin: 0 30px;
+        max-width: 100%;
+      }
+      @include desktopL {
+        padding: 135px 0;
+        margin: 0 30px;
+        max-width: 100%;
+      }
+      .content-right {
+        .skills-list {
+          padding: 0.25rem 0;
+        }
+        .skill-title {
+          font-weight: 600;
+        }
+        .skill {
+          display: inline-block;
+          animation: fadeInRight;
+          animation-duration: 2s;
+        }
+      }
+    }
+  }
+}

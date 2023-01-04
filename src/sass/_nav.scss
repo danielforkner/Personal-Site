@@ -3,20 +3,21 @@ nav {
   padding: 0 0 0 20%;
   li {
     a {
-      color: #5b656f;
-      font-weight: 500;
+      color: #2f353c;
       font-size: 1.15rem;
       line-height: 40px;
       text-decoration: none;
     }
     a.active {
-      color: rgb(0, 0, 0);
+      font-weight: 900;
+      color: #34373a;
+      text-decoration: underline;
     }
     ul {
       li {
         a {
           margin: 0 0 0 10px;
-          color: #3e5163;
+          color: #596470;
           // font-weight: 500;
           font-size: 1rem;
           line-height: 25px;

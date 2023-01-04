@@ -3,7 +3,10 @@ import React, { useEffect } from 'react';
 const Aside = () => {
   // handle scrolling and active links
   useEffect(() => {
-    const articles = document.querySelectorAll('article, section');
+    const articles = document.querySelectorAll(
+      'article, #projects > .contents > div'
+    );
+    console.log(articles);
     const asideToggle = document.querySelector('.aside-toggle');
     window.addEventListener('scroll', function () {
       const headerPositionBottom =

@@ -1,14 +1,15 @@
 header {
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  border-bottom: 1px solid black;
-  background: url();
+  // border-bottom: 1px solid black;
   @include desktopL {
-    height: 600px;
+    min-height: 600px;
   }
   .content-wrapper {
     @include tablet {
       max-width: 768px;
-      margin: 0 auto;
+      margin: 25px auto 0;
     }
     @include desktopL {
       max-width: 1024px;
@@ -17,6 +18,7 @@ header {
   }
   .content {
     text-align: center;
+    color: white;
     margin: 0 auto;
     max-width: 425px;
     padding: 40px 15px;
@@ -29,7 +31,7 @@ header {
     @include desktopL {
       text-align: left;
       max-width: 600px;
-      padding: 235px 0;
+      padding: 135px 0;
       margin: 0 30px;
     }
 
@@ -54,16 +56,20 @@ header {
       font-style: italic;
     }
   }
-  .skills-list {
-    padding: 0.25rem 0;
-  }
-  .skill-title {
-    font-weight: 600;
-  }
-  .skill {
-    display: inline-block;
-    animation: fadeInRight;
-    animation-duration: 2s;
+  .background-image {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/624b503dcf00e94df2b0f15b/1649102934873-PKAKG6A7WTI9WIZ9D164/landing-full-topleft-01.jpg?format=2500w');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    // &.dark-mode {
+    //   background-image: url('/public/images/site/herok-dark.jpg');
+    // }
   }
 }
 
