@@ -6,8 +6,10 @@ const Border = () => {
       <div className="border-content-wrapper">
         <div className="border-content">
           <div className="content-left">
-            I am a professional software engineer and web developer with a
-            passion for elegant functionality.
+            <p>
+              I am a professional software engineer and web developer with a
+              passion for elegant functionality.
+            </p>
           </div>
           <div className="content-right">
             <div className="skills-list">

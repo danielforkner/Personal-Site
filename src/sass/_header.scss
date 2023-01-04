@@ -18,7 +18,7 @@ header {
   }
   .content {
     text-align: center;
-    color: white;
+    color: $font-color-light;
     margin: 0 auto;
     max-width: 425px;
     padding: 40px 15px;
@@ -57,7 +57,7 @@ header {
     }
   }
   .background-image {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/624b503dcf00e94df2b0f15b/1649102934873-PKAKG6A7WTI9WIZ9D164/landing-full-topleft-01.jpg?format=2500w');
+    background-image: url('/public/images/site/circuit side.svg');
     position: absolute;
     top: 0;
     left: 0;

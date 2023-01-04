@@ -1,13 +1,16 @@
 main {
   position: relative;
-  background-color: #e9e9ed;
+  background-image: url('/public/images/site/circuit up.svg');
+  background-size: cover;
   height: 100%;
   float: left;
   .content {
+    position: relative;
     padding: 60px 0 80px;
-    width: 80%;
+    width: 75%;
     float: right;
-    background-color: white;
+    background: $color-secondary-transparent;
+    border-top-left-radius: 50px;
     article {
       padding: 0 20px;
       margin: 0 0 20px 0;

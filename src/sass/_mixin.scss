@@ -7,6 +7,23 @@
 // $mobileS: 320px;
 
 // media queries
+@mixin mobileL {
+  @media screen and (max-width: $mobileL) {
+    @content;
+  }
+}
+
+@mixin mobileM {
+  @media screen and (max-width: $mobileM) {
+    @content;
+  }
+}
+
+@mixin mobileS {
+  @media screen and (max-width: $mobileS) {
+    @content;
+  }
+}
 @mixin allMobile {
   @media screen and (max-width: $allMobile) {
     @content;

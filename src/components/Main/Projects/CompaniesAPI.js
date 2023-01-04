@@ -2,7 +2,7 @@ import React from 'react';
 
 const CompaniesAPI = () => {
   return (
-    <div id="projects-companiesapi">
+    <div id="projects-companiesapi" className="card">
       <h3 className="project">Hello from CompaniesAPI</h3>
       <img
         className="icon"

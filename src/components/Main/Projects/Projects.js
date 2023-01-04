@@ -14,13 +14,20 @@ const Projects = () => {
         Recent projects include personal use, classroom demonstrations and aids,
         and more.
       </p>
+      <p>
+        I love to learn new technologies and utilize projects to solve problems.
+      </p>
+      <p>
+        Currently I am learning .NET by utilizing a Rasperry Pi as a home
+        server.
+      </p>
       <ImageGrid />
       <div className="contents">
-        <CompaniesAPI />
-        <Algovisualizer />
-        <Deployment />
+        {/* <CompaniesAPI /> */}
+        {/* <Algovisualizer /> */}
+        {/* <Deployment /> */}
         <Tetris />
-        <Snake />
+        {/* <Snake /> */}
       </div>
     </article>
   );

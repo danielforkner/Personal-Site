@@ -12,6 +12,19 @@ $mobileL: 425px;
 $mobileM: 375px;
 $mobileS: 320px;
 
+$color-primary: #0e2a47;
+$color-secondary-transparent: rgba(192, 200, 208, 0.5);
+$color-secondary-opaque: rgb(192, 200, 208);
+$color-card: #ffffff;
+$color-card-dark: #ebeaea;
+$font-color-light: #ffffff;
+$font-color-dark: #000000;
+$font-color-secondary-light: #d3e4f9;
+$font-color-active-light: #94bbf1;
+$box-shadow-card: 2px 2px 2px rgb(100, 100, 99);
+$box-shadow-effect: 2px 2px 2px rgb(255, 170, 0);
+$border-radius-card: 0.25rem;
+
 * {
   margin: 0;
   padding: 0;

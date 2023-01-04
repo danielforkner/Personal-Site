@@ -68,7 +68,7 @@ const Aside = () => {
                   <a href="#projects-algovisualizer">Algovisualizer</a>
                 </li>
                 <li>
-                  <a href="#projects-appdeployment">App Deployment Guide</a>
+                  <a href="#projects-deployment">Deployment Guide</a>
                 </li>
                 {/* <li>
                   <a href="#Projects-Podcast">Educational Podcast</a>
