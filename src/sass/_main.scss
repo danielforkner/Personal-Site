@@ -1,6 +1,6 @@
 main {
   position: relative;
-  background-image: url('/public/images/site/circuit up.svg');
+  // background-image: url('/public/images/site/hexagon-body.svg');
   background-size: cover;
   height: 100%;
   float: left;
@@ -9,8 +9,9 @@ main {
     padding: 60px 0 80px;
     width: 75%;
     float: right;
-    background: $color-secondary-transparent;
-    border-top-left-radius: 50px;
+    // box-shadow: $box-shadow-card-inverse;
+    // background: $color-secondary-transparent;
+    // border-top-left-radius: 50px;
     article {
       padding: 0 20px;
       margin: 0 0 20px 0;

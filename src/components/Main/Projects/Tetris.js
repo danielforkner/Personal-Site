@@ -11,10 +11,17 @@ const Tetris = () => {
   return (
     <div id="projects-tetris" className="card">
       <div className="card-header">
-        <div className="card-header-text">Project: Tetris</div>
+        <div className="card-header-text">
+          <img
+            className="icon"
+            src="/public/images/tetris/icon.png"
+            alt="icon"
+          />
+          <div>Project: Tetris</div>
+        </div>
         <ul className="card-header-links">
           <li className="card-header-link">
-            <a href="#">Live Link</a>
+            <a href="#">Deploy</a>
           </li>
           <li className="card-header-link">
             <a href="#">GitHub</a>
@@ -23,7 +30,38 @@ const Tetris = () => {
       </div>
       <div className="card-body">
         <p></p>
-        {/* <img className="icon" src="/public/images/tetris/icon.png" alt="icon" /> */}
+        <div className="grid">
+          <div className="item">
+            <div
+              className="overlay"
+              style={{
+                background: "url('/public/images/tetris/icon.png')",
+                backgroundSize: 'cover',
+              }}
+            >
+              {/* <div className="text">Tetris Game</div> */}
+            </div>
+            <img
+              src="/public/images/tetris/tetris3b.png"
+              alt="page of the falling blocks game"
+            />
+          </div>
+          <div className="item">
+            <div
+              className="overlay"
+              style={{
+                background: "url('/public/images/tetris/icon.png')",
+                backgroundSize: 'cover',
+              }}
+            >
+              {/* <div className="text">Tetris Game</div> */}
+            </div>
+            <img
+              src="/public/images/tetris/tetris2b.png"
+              alt="page of the falling blocks game"
+            />
+          </div>
+        </div>
         <div className="videos-wrapper">
           <div className="videos">
             <div className="video">

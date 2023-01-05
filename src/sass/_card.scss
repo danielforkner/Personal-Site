@@ -1,0 +1,86 @@
+.card {
+  // color: red;
+  margin: 1rem 0;
+  background-color: $color-card;
+  box-shadow: $box-shadow-card;
+  border-radius: $border-radius-card;
+  border-top: $border-line-soft;
+  border-left: $border-line-soft;
+  .card-header {
+    display: flex;
+    border-top-left-radius: $border-radius-card;
+    border-top-right-radius: $border-radius-card;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: $border-line-soft;
+    background-color: $color-card-dark;
+    .card-header-text {
+      font-size: 1.25rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .icon {
+        box-shadow: $box-shadow-card;
+        // border: $border-line-soft;
+      }
+    }
+    .card-header-links {
+      display: flex;
+      align-items: center;
+      .card-header-link {
+        border: $border-line-soft;
+        padding: 0.25rem 0.5rem;
+        margin-left: 0.5rem;
+        font-size: 0.95rem;
+        font-weight: 400;
+        color: $font-color-dark;
+        border-radius: $border-radius-card;
+        box-shadow: $box-shadow-card;
+        &:hover {
+          background-color: $color-secondary-transparent;
+        }
+        a {
+          text-decoration: none;
+          color: $font-color-dark;
+        }
+      }
+    }
+  }
+  .card-body {
+    padding: 1.25rem;
+    .paragraph-title {
+      // font-size: 1.25rem;
+      // font-weight: 900;
+      // margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 0.5rem;
+      border-bottom: $border-line-soft;
+    }
+    .tech-icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      .tech-icon {
+        height: 50px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // width: 2.5rem;
+        // height: 2.5rem;
+        border-radius: $border-radius-card;
+        // background-color: $color-secondary;
+        // color: $font-color-light;
+        // font-size: 1.25rem;
+        // font-weight: 900;
+        box-shadow: $box-shadow-card;
+      }
+    }
+  }
+}

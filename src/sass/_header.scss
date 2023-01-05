@@ -18,7 +18,7 @@ header {
   }
   .content {
     text-align: center;
-    color: $font-color-light;
+    color: $font-color-dark;
     margin: 0 auto;
     max-width: 425px;
     padding: 40px 15px;
@@ -31,7 +31,7 @@ header {
     @include desktopL {
       text-align: left;
       max-width: 600px;
-      padding: 135px 0;
+      padding: 235px 0;
       margin: 0 30px;
     }
 
@@ -57,7 +57,7 @@ header {
     }
   }
   .background-image {
-    background-image: url('/public/images/site/circuit side.svg');
+    // background-image: url('/public/images/site/hexagon-header.svg');
     position: absolute;
     top: 0;
     left: 0;
@@ -72,26 +72,3 @@ header {
     // }
   }
 }
-
-// @media screen and (min-width: $desktopL) {
-//   header {
-//     height: 600px;
-
-//     .content-wrapper {
-//       max-width: 1024px;
-//       margin: 0 auto;
-//     }
-//     .content {
-//       text-align: left;
-//       max-width: 600px;
-//       padding: 235px 0;
-//       margin: 0 30px;
-
-//       h2 {
-//         font-size: 60px;
-//         font-weight: 400;
-//         margin: 0;
-//       }
-//     }
-//   }
-// }

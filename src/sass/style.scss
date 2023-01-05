@@ -19,11 +19,13 @@ $color-card: #ffffff;
 $color-card-dark: #ebeaea;
 $font-color-light: #ffffff;
 $font-color-dark: #000000;
-$font-color-secondary-light: #d3e4f9;
-$font-color-active-light: #94bbf1;
+$font-color-secondary-light: #4c5a68;
+$font-color-active-light: #536074;
 $box-shadow-card: 2px 2px 2px rgb(100, 100, 99);
+$box-shadow-card-inverse: -2px -2px 2px rgb(100, 100, 99);
 $box-shadow-effect: 2px 2px 2px rgb(255, 170, 0);
 $border-radius-card: 0.25rem;
+$border-line-soft: 1px solid rgba(0, 0, 0, 0.125);
 
 * {
   margin: 0;
@@ -33,6 +35,8 @@ $border-radius-card: 0.25rem;
 
 body {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   .aside-open {
     overflow: hidden;
   }
@@ -46,6 +50,7 @@ ul {
 @import 'border';
 @import 'main';
 @import 'projects';
+@import 'card';
 @import 'aside';
 @import 'nav';
 @import 'footer';

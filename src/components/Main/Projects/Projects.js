@@ -21,13 +21,13 @@ const Projects = () => {
         Currently I am learning .NET by utilizing a Rasperry Pi as a home
         server.
       </p>
-      <ImageGrid />
+      {/* <ImageGrid /> */}
       <div className="contents">
-        {/* <CompaniesAPI /> */}
-        {/* <Algovisualizer /> */}
-        {/* <Deployment /> */}
+        <CompaniesAPI />
+        <Algovisualizer />
+        <Deployment />
         <Tetris />
-        {/* <Snake /> */}
+        <Snake />
       </div>
     </article>
   );
