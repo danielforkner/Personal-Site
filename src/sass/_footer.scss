@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 30px;
   border-top: 1px solid black;
   background-color: #fff;
   display: flex;
@@ -13,6 +14,7 @@
 .footer-center {
   text-align: center;
   display: flex;
+  align-items: center;
 }
 .footer-right {
   position: absolute;
@@ -21,4 +23,20 @@
 }
 .footer-hide {
   display: none;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  img {
+    height: 25px;
+    transition: 0.2s ease;
+    &:hover {
+      height: 30px;
+      transform: rotate(10deg);
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -10,7 +10,8 @@ nav {
     }
     a.active {
       font-weight: 900;
-      color: $font-color-active-light;
+      color: $font-color-dark;
+      text-decoration: underline $font-color-active-light 2px solid;
     }
     ul {
       li {

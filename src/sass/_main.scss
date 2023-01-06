@@ -14,9 +14,14 @@ main {
     // border-top-left-radius: 50px;
     article {
       padding: 0 20px;
-      margin: 0 0 20px 0;
+      margin: 0 0 1.5rem 0;
       .icon {
         width: 50px;
+      }
+      h2 {
+        // font-size: 1.5rem;
+        // font-weight: 900;
+        margin: 0 0 1.5rem 0;
       }
     }
   }

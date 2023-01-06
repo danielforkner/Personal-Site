@@ -1,71 +1,34 @@
 import React from 'react';
+import CardHeader from '../Cards/CardHeader';
+import CardImgGrid from '../Cards/CardImgGrid';
+import CardText from '../Cards/CardText';
 
 const Algovisualizer = () => {
   return (
     <div id="projects-algovisualizer" className="card">
-      <div className="card-header">
-        <div className="card-header-text">
-          <img className="icon" src="/public/images/algo/icon.png" alt="icon" />
-          <div>Project: Algovisualizer</div>
-        </div>
-        <ul className="card-header-links">
-          <li className="card-header-link">
-            <a href="#">Deploy</a>
-          </li>
-          <li className="card-header-link">
-            <a href="#">GitHub</a>
-          </li>
-        </ul>
-      </div>
+      <CardHeader
+        data={{
+          icon: '/public/images/algo/icon.png',
+          title: 'Algovisualizer',
+          deploy: 'https://algovisualized.netlify.app/',
+          github: 'https://github.com/danielforkner/algovisualizer',
+        }}
+      />
       <div className="card-body">
-        <p></p>
-        <div className="grid">
-          <div className="item">
-            <div
-              className="overlay"
-              style={{
-                background: "url('/public/images/algo/icon.png')",
-                backgroundSize: 'cover',
-              }}
-            >
-              {/* <div className="text">Algovizualizer</div> */}
-            </div>
-            <img
-              src="/public/images/algo/arrays1.png"
-              alt="page of the algovizualizer project"
-            />
-          </div>
-          <div className="item">
-            <div
-              className="overlay"
-              style={{
-                background: "url('/public/images/algo/icon.png')",
-                backgroundSize: 'cover',
-              }}
-            >
-              {/* <div className="text">Algovizualizer</div> */}
-            </div>
-            <img
-              src="/public/images/algo/recursion.png"
-              alt="page of the algovizualizer project"
-            />
-          </div>
-          <div className="item">
-            <div
-              className="overlay"
-              style={{
-                background: "url('/public/images/algo/icon.png')",
-                backgroundSize: 'cover',
-              }}
-            >
-              {/* <div className="text">Algovizualizer</div> */}
-            </div>
-            <img
-              src="/public/images/algo/sorting2.png"
-              alt="page of the algovizualizer project"
-            />
-          </div>
-        </div>
+        <CardText
+          description="A RESTful API that manages requests related to a database of companies, their employees, and their financial reports."
+          overview="This project came out of the need for a teaching tool for students learning about REST APIs for the first time."
+          tech="React and Redux for the front end. Chart.js for the data visualization."
+          techIcons={{
+            project: 'algovisuzlizer',
+            icons: ['react.png', 'redux.png', 'chartjs.svg', 'javascript.svg'],
+          }}
+        />
+
+        <CardImgGrid
+          imgFolder="algo"
+          images={['arrays1.png', 'recursion.png', 'sorting2.png']}
+        />
       </div>
     </div>
   );

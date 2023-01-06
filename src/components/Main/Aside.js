@@ -6,15 +6,17 @@ const Aside = () => {
     const articles = document.querySelectorAll(
       'article, #projects > .contents > div'
     );
-    console.log(articles);
     const asideToggle = document.querySelector('.aside-toggle');
+    const aside = document.querySelector('aside');
     window.addEventListener('scroll', function () {
       const headerPositionBottom =
         document.querySelector('header').offsetHeight;
       if (window.scrollY >= headerPositionBottom) {
         asideToggle.classList.add('fixed');
+        aside.classList.add('fixed');
       } else {
         asideToggle.classList.remove('fixed');
+        aside.classList.remove('fixed');
       }
       articles.forEach((article) => {
         // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
