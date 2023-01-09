@@ -240,6 +240,16 @@ main aside {
     display: none;
   }
 }
+@media screen and (max-width: 375px) {
+  main .content {
+    max-width: 375px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .content {
+    max-width: 320px;
+  }
+}
 
 #projects .grid {
   display: grid;

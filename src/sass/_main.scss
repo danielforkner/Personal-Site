@@ -94,4 +94,14 @@ main {
       display: none;
     }
   }
+  @include mobileM {
+    .content {
+      max-width: 375px;
+    }
+  }
+  @include mobileS {
+    .content {
+      max-width: 320px;
+    }
+  }
 }
