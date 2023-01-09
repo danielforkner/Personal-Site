@@ -155,6 +155,10 @@ main {
   height: 100%;
   float: left;
 }
+main iframe {
+  width: 100%;
+  height: 100%;
+}
 main .button {
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 0.25rem 0.5rem;
@@ -305,15 +309,15 @@ main aside {
   grid-template-columns: repeat(auto-fit, minMax(325px, 1fr));
   grid-gap: 5px;
 }
+@media screen and (max-width: 991px) {
+  #projects-tetris .videos-wrapper .videos {
+    grid-template-columns: repeat(auto-fit, minMax(100%, 1fr));
+  }
+}
 #projects-tetris .videos-wrapper .videos .video {
   width: 100%;
   border: 1px solid black;
   height: 250px;
-}
-@media screen and (min-width: 992px) {
-  #projects-tetris .videos-wrapper .videos .video {
-    height: 350px;
-  }
 }
 #projects-tetris .videos-wrapper .videos .video iframe {
   width: 100%;
