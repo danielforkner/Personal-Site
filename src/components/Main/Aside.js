@@ -36,13 +36,19 @@ const Aside = () => {
     });
   }, []);
 
-  const handleToggle = () => {
+  const handleToggle = (_, linkClick = false) => {
     const asideToggle = document.querySelector('.aside-toggle');
     const aside = document.querySelector('aside');
     const body = document.querySelector('body');
-    asideToggle.classList.toggle('active');
-    aside.classList.toggle('active');
-    body.classList.toggle('aside-open');
+    if (!linkClick) {
+      asideToggle.classList.toggle('active');
+      aside.classList.toggle('active');
+      body.classList.toggle('aside-open');
+    } else if (linkClick && aside.classList.contains('active')) {
+      asideToggle.classList.remove('active');
+      aside.classList.remove('active');
+      body.classList.remove('aside-open');
+    }
   };
 
   return (
@@ -56,30 +62,61 @@ const Aside = () => {
         <nav>
           <ul>
             <li>
-              <a href="#about" className="active">
+              <a
+                href="#about"
+                className="active"
+                onClick={(e) => handleToggle(e, true)}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={(e) => handleToggle(e, true)}>
+                Projects
+              </a>
               <ul>
                 <li>
-                  <a href="#projects-companiesapi">Companies API</a>
+                  <a
+                    href="#projects-companiesapi"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Companies API
+                  </a>
                 </li>
                 <li>
-                  <a href="#projects-algovisualizer">Algovisualizer</a>
+                  <a
+                    href="#projects-algovisualizer"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Algovisualizer
+                  </a>
                 </li>
                 <li>
-                  <a href="#projects-deployment">Deployment Guide</a>
+                  <a
+                    href="#projects-deployment"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Deployment Guide
+                  </a>
                 </li>
                 {/* <li>
                   <a href="#Projects-Podcast">Educational Podcast</a>
                 </li> */}
                 <li>
-                  <a href="#projects-tetris">Tetris</a>
+                  <a
+                    href="#projects-tetris"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Tetris
+                  </a>
                 </li>
                 <li>
-                  <a href="#projects-snake">Snake</a>
+                  <a
+                    href="#projects-snake"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Snake
+                  </a>
                 </li>
               </ul>
             </li>
@@ -87,7 +124,9 @@ const Aside = () => {
               <a href="#resume">Resume</a>
             </li> */}
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={(e) => handleToggle(e, true)}>
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

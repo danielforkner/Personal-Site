@@ -96,6 +96,13 @@ header .background-image {
   object-fit: contain;
   z-index: -1;
 }
+@media screen and (max-width: 991px) {
+  header .background-image {
+    width: 225%;
+    height: 225%;
+    object-fit: cover;
+  }
+}
 
 #hero-border {
   min-height: 10vh;

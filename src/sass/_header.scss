@@ -69,5 +69,10 @@ header {
     // &.dark-mode {
     //   background-image: url('/public/images/site/herok-dark.jpg');
     // }
+    @include allMobile {
+      width: 225%;
+      height: 225%;
+      object-fit: cover;
+    }
   }
 }
