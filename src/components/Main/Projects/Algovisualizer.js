@@ -20,7 +20,7 @@ const Algovisualizer = () => {
       />
       <div className="card-body">
         <CardText
-          description="A RESTful API that manages requests related to a database of companies, their employees, and their financial reports."
+          description="A dynamic web application that visualizes common sorting and searching algorithms."
           overview="This project was created as a teaching tool for students learning basic algorithms and data structures. Visualization is offered for:"
           tech="React and Redux for the front end. Chart.js for the data visualization."
           features={[
