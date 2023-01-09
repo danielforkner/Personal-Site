@@ -1,10 +1,11 @@
 import React from 'react';
 import Border from './Border';
+import background from '/public/images/site/worldmap.svg';
 
 const Header = () => {
   return (
     <header>
-      <div className="background-image"></div>
+      <img className="background-image" src={background} />
       <div className="content-wrapper">
         <div className="content">
           <h2>Daniel Forkner</h2>
