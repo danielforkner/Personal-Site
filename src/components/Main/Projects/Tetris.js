@@ -3,13 +3,14 @@ import CardHeader from '../Cards/CardHeader';
 import CardImgGrid from '../Cards/CardImgGrid';
 import CareText from '../Cards/CardText';
 import TetrisVideos from './TetrisVideos';
+import icon from '/public/images/tetris/icon.png';
 
 const Tetris = () => {
   return (
     <div id="projects-tetris" className="card">
       <CardHeader
         data={{
-          icon: '/public/images/tetris/icon.png',
+          icon: icon,
           title: 'Tetris',
           deploy: 'https://danielforkner.github.io/tetris/',
           github: 'https://github.com/danielforkner/tetris',
