@@ -41,7 +41,9 @@ const About = () => {
           <span className="skill">Communication</span>
         </p>
       </div>
-      <div className="text"></div>
+      <a className="button" href="#contact">
+        Contact Me
+      </a>
     </article>
   );
 };

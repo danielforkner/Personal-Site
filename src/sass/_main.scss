@@ -1,4 +1,21 @@
 main {
+  .button {
+    border: $border-line-soft;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: $font-color-dark;
+    border-radius: $border-radius-card;
+    box-shadow: $box-shadow-card;
+    // background-color: $color-secondary-opaque;
+    text-decoration: none;
+    color: $font-color-dark;
+    background-color: $color-card-dark;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-secondary-transparent;
+    }
+  }
   position: relative;
   // background-image: url('/public/images/site/hexagon-body.svg');
   background-size: cover;
@@ -25,6 +42,7 @@ main {
       }
       .skills-list {
         padding: 0.25rem 0;
+        margin: 0.5rem 0;
         .skill-title {
           font-weight: 600;
         }
@@ -48,19 +66,6 @@ main {
         }
         @include desktopS {
           max-width: 800px;
-        }
-        button {
-          border: $border-line-soft;
-          padding: 0.25rem 0.5rem;
-          margin-left: 0.5rem;
-          font-size: 0.95rem;
-          font-weight: 400;
-          color: $font-color-dark;
-          border-radius: $border-radius-card;
-          box-shadow: $box-shadow-card;
-          &:hover {
-            background-color: $color-secondary-transparent;
-          }
         }
       }
       input,

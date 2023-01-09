@@ -60,7 +60,7 @@ const ContactForm = () => {
           <label htmlFor="message">Message:</label>
           <textarea id="message" required />
         </div>
-        <button id="submit" type="submit">
+        <button className="button" id="submit" type="submit">
           {status}
         </button>
         {response && <div className="response">{response}</div>}
