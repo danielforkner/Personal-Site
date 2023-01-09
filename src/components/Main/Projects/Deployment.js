@@ -34,13 +34,13 @@ const Deployment = () => {
         />
         <div className="card-body-section">
           <h3>Demonstration Video</h3>
-          {/* <iframe
+          <iframe
             height="250px"
             src="https://www.youtube.com/embed/LTC9VhqlR0g"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen={true}
-          ></iframe> */}
+          ></iframe>
         </div>
         <CardImgGrid imgFolder="deployment" images={['deployment.png']} />
       </div>

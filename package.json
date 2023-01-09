@@ -2,7 +2,7 @@
   "scripts": {
     "start": "webpack serve --mode=development",
     "build": "webpack --mode=production",
-    "build:dev": "webpack --mode=development --watch && sass src/sass/style.scss src/index.css --watch"
+    "build:dev": "webpack --mode=development --watch"
   },
   "dependencies": {
     "@babel/core": "^7.20.7",

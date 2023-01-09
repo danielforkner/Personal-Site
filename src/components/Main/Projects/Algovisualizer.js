@@ -17,8 +17,18 @@ const Algovisualizer = () => {
       <div className="card-body">
         <CardText
           description="A RESTful API that manages requests related to a database of companies, their employees, and their financial reports."
-          overview="This project came out of the need for a teaching tool for students learning about REST APIs for the first time."
+          overview="This project was created as a teaching tool for students learning basic algorithms and data structures. Visualization is offered for:"
           tech="React and Redux for the front end. Chart.js for the data visualization."
+          features={[
+            'Insertion Sort',
+            'Merge Sort',
+            'Quick Sort',
+            'Bubble Sort',
+            'Selection Sort',
+            'Arrays: Two Sum Search (brute force and efficient)',
+            'Arrays: Three Sum Search (brute force and efficient)',
+            'Recursion',
+          ]}
           techIcons={{
             project: 'algovisuzlizer',
             icons: ['react.png', 'redux.png', 'chartjs.svg', 'javascript.svg'],

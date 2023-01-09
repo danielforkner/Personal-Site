@@ -23,8 +23,59 @@ main {
         // font-weight: 900;
         margin: 0 0 1.5rem 0;
       }
+      .skills-list {
+        padding: 0.25rem 0;
+        .skill-title {
+          font-weight: 600;
+        }
+        .skill {
+          display: inline-block;
+          animation: fadeInRight;
+          animation-duration: 2s;
+        }
+      }
+      form {
+        box-shadow: $box-shadow-card;
+        border-radius: $border-radius-card;
+        border-top: $border-line-soft;
+        border-left: $border-line-soft;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+        @include desktopS {
+          max-width: 800px;
+        }
+        button {
+          border: $border-line-soft;
+          padding: 0.25rem 0.5rem;
+          margin-left: 0.5rem;
+          font-size: 0.95rem;
+          font-weight: 400;
+          color: $font-color-dark;
+          border-radius: $border-radius-card;
+          box-shadow: $box-shadow-card;
+          &:hover {
+            background-color: $color-secondary-transparent;
+          }
+        }
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 6px 0 16px 0;
+        resize: vertical;
+      }
     }
   }
+
   aside {
     position: sticky;
     top: 0;
