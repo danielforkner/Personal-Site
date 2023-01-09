@@ -1,4 +1,6 @@
 import React from 'react';
+import linkedin from '/public/images/site/linkedin.svg';
+import github from '/public/images/site/github.svg';
 
 const Footer = () => {
   const handleHide = () => {
@@ -12,13 +14,13 @@ const Footer = () => {
         <div className="footer-text">Connect </div>
         <div className="footer-icons">
           <a href="https://www.linkedin.com/in/danielforkner/" target="_blank">
-            <img src="/public/images/site/linkedin.svg" alt="linkedin logo" />
+            <img src={linkedin} alt="linkedin logo" />
           </a>
           <a
             href="https://github.com/danielforkner/Personal-Site"
             target="_blank"
           >
-            <img src="/public/images/site/github.svg" alt="github logo" />
+            <img src={github} alt="github logo" />
           </a>
         </div>
       </div>
