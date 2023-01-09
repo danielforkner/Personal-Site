@@ -4,6 +4,9 @@ import CardImgGrid from '../Cards/CardImgGrid';
 import CareText from '../Cards/CardText';
 import TetrisVideos from './TetrisVideos';
 import icon from '/public/images/tetris/icon.png';
+import tetris1PNG from '/public/images/tetris/tetris1b.png';
+import tetris2PNG from '/public/images/tetris/tetris2b.png';
+import tetris3PNG from '/public/images/tetris/tetris3b.png';
 
 const Tetris = () => {
   return (
@@ -24,13 +27,13 @@ const Tetris = () => {
           tech="JavaScript, HTML & CSS."
           techIcons={{
             project: 'tetris',
-            icons: ['javascript.svg', 'html5.png', 'css3.png'],
+            icons: ['javascript', 'html5', 'css3'],
           }}
         />
-        <TetrisVideos />
+        {/* <TetrisVideos /> */}
         <CardImgGrid
-          imgFolder="tetris"
-          images={['tetris1b.png', 'tetris2b.png', 'tetris3b.png']}
+          overlays={[icon]}
+          images={[tetris1PNG, tetris2PNG, tetris3PNG]}
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardImgGrid = ({ imgFolder, images, icons }) => {
+const CardImgGrid = ({ overlays, images, icons }) => {
   return (
     <div className="card-body-section">
       <h3>Screenshots</h3>
@@ -11,16 +11,13 @@ const CardImgGrid = ({ imgFolder, images, icons }) => {
               <div
                 className="overlay"
                 style={{
-                  background: `url('/public/images/${imgFolder}/${
-                    icons ? icons[index] : 'icon.png'
-                  }')`,
+                  background: `url(${
+                    overlays.length > 1 ? overlays[index] : overlays[0]
+                  })`,
                   backgroundSize: 'cover',
                 }}
               ></div>
-              <img
-                src={`/public/images/${imgFolder}/${image}`}
-                alt={`screenshot ${index + 1} of the project`}
-              />
+              <img src={image} alt={`screenshot ${index + 1} of the project`} />
             </div>
           );
         })}

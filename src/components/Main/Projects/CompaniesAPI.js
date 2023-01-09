@@ -2,6 +2,12 @@ import React from 'react';
 import CardHeader from '../Cards/CardHeader';
 import CardImgGrid from '../Cards/CardImgGrid';
 import CardText from '../Cards/CardText';
+import icon1 from '/public/images/companies/icon1.png';
+import icon2 from '/public/images/companies/icon2.png';
+import icon3 from '/public/images/companies/icon3.png';
+import companies1 from '/public/images/companies/companies1.png';
+import companies2 from '/public/images/companies/companies2.png';
+import companies3 from '/public/images/companies/companies3.png';
 
 const CompaniesAPI = () => {
   return (
@@ -22,19 +28,18 @@ const CompaniesAPI = () => {
           techIcons={{
             project: 'companiesapi',
             icons: [
-              'javascript.svg',
-              'nodejs.png',
-              'express.svg',
-              'postgresql.svg',
-              'render.png',
-              'bitio.png',
+              'javascript',
+              'nodejs',
+              'express',
+              'postgres',
+              'render',
+              'bitio',
             ],
           }}
         />
         <CardImgGrid
-          imgFolder="companies"
-          images={['companies1.png', 'companies2.png', 'companies3.png']}
-          icons={['icon1.png', 'icon2.png', 'icon3.png']}
+          overlays={[icon1, icon2, icon3]}
+          images={[companies1, companies2, companies3]}
         />
       </div>
     </div>

@@ -2,13 +2,17 @@ import React from 'react';
 import CardHeader from '../Cards/CardHeader';
 import CardImgGrid from '../Cards/CardImgGrid';
 import CardText from '../Cards/CardText';
+import icon from '/public/images/algo/icon.png';
+import arrays1 from '/public/images/algo/arrays1.png';
+import recursion from '/public/images/algo/recursion.png';
+import sorting2 from '/public/images/algo/sorting2.png';
 
 const Algovisualizer = () => {
   return (
     <div id="projects-algovisualizer" className="card">
       <CardHeader
         data={{
-          icon: '/public/images/algo/icon.png',
+          icon: icon,
           title: 'Algovisualizer',
           deploy: 'https://algovisualized.netlify.app/',
           github: 'https://github.com/danielforkner/algovisualizer',
@@ -31,13 +35,13 @@ const Algovisualizer = () => {
           ]}
           techIcons={{
             project: 'algovisuzlizer',
-            icons: ['react.png', 'redux.png', 'chartjs.svg', 'javascript.svg'],
+            icons: ['react', 'redux', 'chartjs', 'javascript'],
           }}
         />
 
         <CardImgGrid
-          imgFolder="algo"
-          images={['arrays1.png', 'recursion.png', 'sorting2.png']}
+          overlays={[icon]}
+          images={[arrays1, recursion, sorting2]}
         />
       </div>
     </div>

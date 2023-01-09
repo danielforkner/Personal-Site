@@ -1,6 +1,8 @@
 import React from 'react';
 import CardText from '../Cards/CardText';
 import CardImgGrid from '../Cards/CardImgGrid';
+import icon from '/public/images/deployment/icon.png';
+import deploymentPNG from '/public/images/deployment/deployment.png';
 
 const Deployment = () => {
   return (
@@ -9,7 +11,7 @@ const Deployment = () => {
         <div className="card-header-text">
           <img
             className="icon"
-            src="/public/images/deployment/icon.png"
+            src={icon}
             alt="icon"
             style={{ filter: 'invert(1)', border: '1px solid black' }}
           />
@@ -42,7 +44,7 @@ const Deployment = () => {
             allowFullScreen={true}
           ></iframe>
         </div>
-        <CardImgGrid imgFolder="deployment" images={['deployment.png']} />
+        <CardImgGrid overlays={[icon]} images={[deploymentPNG]} />
       </div>
     </div>
   );

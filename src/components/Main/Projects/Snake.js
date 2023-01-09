@@ -2,13 +2,17 @@ import React from 'react';
 import CardHeader from '../Cards/CardHeader';
 import CardImgGrid from '../Cards/CardImgGrid';
 import CardText from '../Cards/CardText';
+import icon from '/public/images/snake/icon.png';
+import snake1 from '/public/images/snake/snake1.png';
+import snake2 from '/public/images/snake/snake2.png';
+import snake3 from '/public/images/snake/snake3.png';
 
 const Snake = () => {
   return (
     <div id="projects-snake" className="card">
       <CardHeader
         data={{
-          icon: '/public/images/snake/icon.png',
+          icon: icon,
           title: 'Snake',
           deploy: 'https://danielforkner.github.io/snake-the-game/',
           github: 'https://github.com/danielforkner/snake-the-game',
@@ -27,13 +31,10 @@ const Snake = () => {
           ]}
           techIcons={{
             project: 'snake',
-            icons: ['javascript.svg', 'html5.png', 'css3.png'],
+            icons: ['javascript', 'html5', 'css3'],
           }}
         />
-        <CardImgGrid
-          imgFolder="snake"
-          images={['snake1.png', 'snake2.png', 'snake3.png']}
-        />
+        <CardImgGrid overlays={[icon]} images={[snake1, snake2, snake3]} />
       </div>
     </div>
   );
