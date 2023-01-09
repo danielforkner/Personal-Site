@@ -30,7 +30,7 @@ const Tetris = () => {
             icons: ['javascript', 'html5', 'css3'],
           }}
         />
-        {/* <TetrisVideos /> */}
+        <TetrisVideos />
         <CardImgGrid
           overlays={[icon]}
           images={[tetris1PNG, tetris2PNG, tetris3PNG]}

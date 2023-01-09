@@ -14,7 +14,7 @@ const CompaniesAPI = () => {
     <div id="projects-companiesapi" className="card">
       <CardHeader
         data={{
-          icon: '/public/images/companies/icon2.png',
+          icon: icon1,
           title: 'CompaniesAPI',
           deploy: 'https://companies-api.onrender.com/',
           github: 'https://github.com/danielforkner/companies_api',
