@@ -88,12 +88,13 @@ header .content h3 {
   font-style: italic;
 }
 header .background-image {
+  background-image: url("/public/images/site/worldmap.svg");
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
@@ -401,6 +402,7 @@ aside.fixed {
   display: none;
   z-index: 12;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: white;
 }
 .aside-toggle:hover {
   background-color: rgba(192, 200, 208, 0.5);
@@ -461,8 +463,10 @@ nav li a {
 }
 nav li a.active {
   font-weight: 900;
-  color: #000000;
-  text-decoration: underline #536074 2px solid;
+  color: #8b4a8a;
+}
+nav li ul {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 nav li ul li a {
   margin: 0 0 0 10px;

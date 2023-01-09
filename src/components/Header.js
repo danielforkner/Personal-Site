@@ -4,7 +4,7 @@ import Border from './Border';
 const Header = () => {
   return (
     <header>
-      {/* <div className="background-image"></div> */}
+      <div className="background-image"></div>
       <div className="content-wrapper">
         <div className="content">
           <h2>Daniel Forkner</h2>

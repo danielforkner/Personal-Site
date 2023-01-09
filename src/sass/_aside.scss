@@ -20,6 +20,7 @@ aside {
   display: none;
   z-index: 12;
   border: $border-line-soft;
+  background-color: white;
   &:hover {
     background-color: $color-secondary-transparent;
   }

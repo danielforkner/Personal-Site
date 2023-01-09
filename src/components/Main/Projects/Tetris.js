@@ -26,7 +26,7 @@ const Tetris = () => {
             icons: ['javascript.svg', 'html5.png', 'css3.png'],
           }}
         />
-        <TetrisVideos />
+        {/* <TetrisVideos /> */}
         <CardImgGrid
           imgFolder="tetris"
           images={['tetris1b.png', 'tetris2b.png', 'tetris3b.png']}

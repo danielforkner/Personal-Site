@@ -57,13 +57,13 @@ header {
     }
   }
   .background-image {
-    // background-image: url('/public/images/site/hexagon-header.svg');
+    background-image: url('/public/images/site/worldmap.svg');
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from './Contact';
+import ContactForm from './ContactForm';
 import Projects from './Projects/Projects';
 import Resume from './Resume';
 import Aside from './Aside';
@@ -12,8 +12,8 @@ const Main = () => {
       <div className="content">
         <About />
         <Projects />
-        <Resume />
-        <Contact />
+        {/* <Resume /> */}
+        <ContactForm />
       </div>
     </main>
   );
