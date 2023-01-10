@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const TetrisVideos = () => {
+  const [video, setVideo] = useState(
+    'https://www.youtube.com/embed/_fMr1luxYGk'
+  );
   const handleClick = (e) => {
     const url = e.target.id;
-    const iframe = document.querySelector('iframe');
-    iframe.src = url;
+    setVideo(url);
     document.querySelector('.video-links .active').classList.remove('active');
     e.target.classList.add('active');
   };
@@ -17,9 +19,8 @@ const TetrisVideos = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/_fMr1luxYGk"
+              src={video}
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen={true}
             ></iframe>
