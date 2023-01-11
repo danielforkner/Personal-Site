@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+:export {
+  backgroundColorLight: white;
+  backgroundColorDark: black;
+  backgroundColorSecondary: rgb(203, 200, 200);
+  backgroundColorTertiary: rgb(168, 68, 168);
+  backgroundColorTertiaryHover: rgba(168, 68, 168, 0.8);
+  buttonFontColor: white;
+  boxShadow: 2px 2px 2px rgb(100, 100, 99);
+  boxShadowGlow: 2px 2px 2px rgb(255, 170, 0);
+  borderRadiusCard: 0.25rem;
+  borderLineSoft: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +29,11 @@ body {
 }
 body .aside-open {
   overflow: hidden;
+}
+
+.darkMode {
+  background-color: black;
+  color: white;
 }
 
 ul {
@@ -387,6 +406,7 @@ main aside {
 .card .card-header .card-header-text {
   font-size: 1.25rem;
   font-weight: 500;
+  color: black !important;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -453,6 +473,15 @@ aside {
   width: 20%;
   float: left;
 }
+aside #darkModeBtn {
+  height: 50px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+aside #darkModeBtn:hover {
+  transform: rotate(360deg);
+}
 aside.active {
   position: absolute;
   display: block;
@@ -517,7 +546,6 @@ aside.fixed {
     top: 0;
     left: 0;
     overflow: auto;
-    background-color: white;
     z-index: 10;
   }
 }
@@ -533,7 +561,7 @@ nav li a {
 }
 nav li a.active {
   font-weight: 900;
-  color: rgb(168, 68, 168);
+  color: rgb(168, 68, 168) !important;
 }
 nav li ul {
   border-left: 1px solid rgba(0, 0, 0, 0.125);

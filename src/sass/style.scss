@@ -1,8 +1,9 @@
 // animations from animate.style
 // process with the command
 // sass src/sass/style.scss src/index.css --watch
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import 'mixin';
+@import 'variables';
 
 $desktopL: 1200px;
 $desktopS: 992px;
@@ -11,20 +12,6 @@ $tablet: 768px;
 $mobileL: 425px;
 $mobileM: 375px;
 $mobileS: 320px;
-
-// primary
-$background-color-light: white;
-$background-color-dark: black;
-$background-color-secondary: rgb(203, 200, 200);
-// buttons
-$background-color-tertiary: rgb(168, 68, 168);
-$background-color-tertiary-hover: rgb(168, 68, 168, 0.8);
-$button-font-color: white;
-// secondary
-$box-shadow: 2px 2px 2px rgb(100, 100, 99);
-$box-shadow-glow: 2px 2px 2px rgb(255, 170, 0);
-$border-radius-card: 0.25rem;
-$border-line-soft: 1px solid rgba(0, 0, 0, 0.125);
 
 * {
   margin: 0;
@@ -43,6 +30,10 @@ body {
   .aside-open {
     overflow: hidden;
   }
+}
+.darkMode {
+  background-color: $background-color-dark;
+  color: $background-color-light;
 }
 ul {
   list-style: none;

@@ -1,4 +1,13 @@
 aside {
+  #darkModeBtn {
+    height: 50px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
   width: 20%;
   float: left;
   &.active {
@@ -71,7 +80,7 @@ aside {
     top: 0;
     left: 0;
     overflow: auto;
-    background-color: $background-color-light;
+    // background-color: $background-color-light;
     z-index: 10;
   }
 }

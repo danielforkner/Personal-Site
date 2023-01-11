@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import DarkModeBtn from './DarkModeBtn';
 
 const Aside = () => {
   // handle scrolling and active links
@@ -128,6 +129,7 @@ const Aside = () => {
                 Contact
               </a>
             </li>
+            {/* <DarkModeBtn /> */}
           </ul>
         </nav>
       </aside>

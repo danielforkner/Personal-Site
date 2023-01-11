@@ -1,0 +1,26 @@
+// primary
+$background-color-light: white;
+$background-color-dark: black;
+$background-color-secondary: rgb(203, 200, 200);
+// buttons
+$background-color-tertiary: rgb(168, 68, 168);
+$background-color-tertiary-hover: rgb(168, 68, 168, 0.8);
+$button-font-color: white;
+// secondary
+$box-shadow: 2px 2px 2px rgb(100, 100, 99);
+$box-shadow-glow: 2px 2px 2px rgb(255, 170, 0);
+$border-radius-card: 0.25rem;
+$border-line-soft: 1px solid rgba(0, 0, 0, 0.125);
+
+:export {
+  backgroundColorLight: $background-color-light;
+  backgroundColorDark: $background-color-dark;
+  backgroundColorSecondary: $background-color-secondary;
+  backgroundColorTertiary: $background-color-tertiary;
+  backgroundColorTertiaryHover: $background-color-tertiary-hover;
+  buttonFontColor: $button-font-color;
+  boxShadow: $box-shadow;
+  boxShadowGlow: $box-shadow-glow;
+  borderRadiusCard: $border-radius-card;
+  borderLineSoft: $border-line-soft;
+}
