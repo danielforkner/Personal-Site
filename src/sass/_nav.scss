@@ -4,6 +4,7 @@ nav {
   li {
     a {
       font-size: 1.15rem;
+      font-weight: 600;
       color: $background-color-dark;
       line-height: 40px;
       text-decoration: none;
@@ -21,6 +22,7 @@ nav {
           color: $background-color-dark;
           // font-weight: 500;
           font-size: 1rem;
+          font-weight: 400;
           line-height: 25px;
           text-decoration: none;
         }

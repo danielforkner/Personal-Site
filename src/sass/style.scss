@@ -1,7 +1,9 @@
 // animations from animate.style
 // process with the command
 // sass src/sass/style.scss src/index.css --watch
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import 'mixin';
 @import 'variables';
 
@@ -16,7 +18,6 @@ $mobileS: 320px;
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -28,7 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: $background-color-light;
-
+  font-family: 'Poppins', sans-serif;
+  // font-family: 'Merriweather', serif;
   .aside-open {
     overflow: hidden;
   }
@@ -39,6 +41,16 @@ body {
 }
 ul {
   list-style: none;
+}
+h1,
+h2 {
+  font-family: 'Bungee Shade', cursive;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
 }
 
 // import

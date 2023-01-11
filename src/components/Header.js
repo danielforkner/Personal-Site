@@ -8,7 +8,7 @@ const Header = () => {
       <img className="background-image" src={background} />
       <div className="content-wrapper">
         <div className="content">
-          <h2>Daniel Forkner</h2>
+          <h1>Daniel Forkner</h1>
           <h3>Software Engineer</h3>
         </div>
       </div>

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 :export {
   backgroundColorLight: rgb(245, 243, 243);
   backgroundColorDark: rgb(33, 33, 33);
@@ -16,7 +17,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(245, 243, 243);
+  font-family: "Poppins", sans-serif;
 }
 body .aside-open {
   overflow: hidden;
@@ -40,6 +41,19 @@ body .aside-open {
 
 ul {
   list-style: none;
+}
+
+h1,
+h2 {
+  font-family: "Bungee Shade", cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 header {
@@ -207,7 +221,7 @@ main .content {
 }
 main .content article {
   padding: 0 20px;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 2.5rem 0;
 }
 main .content article .icon {
   width: 50px;
@@ -217,7 +231,7 @@ main .content article h2 {
 }
 main .content article .skills-list {
   padding: 0.25rem 0;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 main .content article .skills-list .skill-title {
   font-weight: 600;
@@ -569,6 +583,7 @@ nav {
 }
 nav li a {
   font-size: 1.15rem;
+  font-weight: 600;
   color: rgb(33, 33, 33);
   line-height: 40px;
   text-decoration: none;
@@ -584,6 +599,7 @@ nav li ul li a {
   margin: 0 0 0 10px;
   color: rgb(33, 33, 33);
   font-size: 1rem;
+  font-weight: 400;
   line-height: 25px;
   text-decoration: none;
 }
