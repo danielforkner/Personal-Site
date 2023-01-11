@@ -129,7 +129,7 @@ const Aside = () => {
                 Contact
               </a>
             </li>
-            {/* <DarkModeBtn /> */}
+            <DarkModeBtn />
           </ul>
         </nav>
       </aside>

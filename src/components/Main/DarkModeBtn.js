@@ -7,22 +7,28 @@ const DarkModeBtn = () => {
   const [mode, setMode] = useState(sun);
 
   const handleClick = () => {
-    console.log(variables);
     const aTags = document.querySelectorAll('aside a');
     const body = document.querySelector('body');
+    const aside = document.querySelector('aside');
+    const header = document.querySelector('header');
     if (mode === sun) {
       setMode(moon);
       body.classList.add('darkMode');
+      aside.classList.add('darkMode');
+      header.classList.add('darkMode');
       aTags.forEach((a) => {
         a.style.color = 'white';
       });
     } else {
       setMode(sun);
       body.classList.remove('darkMode');
+      aside.classList.remove('darkMode');
+      header.classList.remove('darkMode');
       aTags.forEach((a) => {
         a.style.color = 'black';
       });
     }
+    aside.classList.remove('active');
   };
 
   return <img onClick={handleClick} id="darkModeBtn" src={mode} />;

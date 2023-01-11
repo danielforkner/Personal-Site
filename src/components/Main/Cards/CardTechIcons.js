@@ -6,8 +6,8 @@ import chartjsSVG from '/public/images/tech-icons/chartjs.svg';
 import reduxPNG from '/public/images/tech-icons/redux.png';
 import reactPNG from '/public/images/tech-icons/react.png';
 import nodejsPNG from '/public/images/tech-icons/nodejs.png';
-import expressSVG from '/public/images/tech-icons/express.svg';
-import postgresSVG from '/public/images/tech-icons/postgresql.svg';
+import expressPNG from '/public/images/tech-icons/express.png';
+import postgresPNG from '/public/images/tech-icons/postgresql.png';
 import renderPNG from '/public/images/tech-icons/render.png';
 import bitioPNG from '/public/images/tech-icons/bitio.png';
 
@@ -39,10 +39,10 @@ const CardTechIcons = ({ project, icons }) => {
             src = nodejsPNG;
             break;
           case 'express':
-            src = expressSVG;
+            src = expressPNG;
             break;
           case 'postgres':
-            src = postgresSVG;
+            src = postgresPNG;
             break;
           case 'render':
             src = renderPNG;
