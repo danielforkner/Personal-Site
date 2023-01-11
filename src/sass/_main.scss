@@ -4,16 +4,15 @@ main {
     padding: 0.25rem 0.5rem;
     font-size: 0.95rem;
     font-weight: 400;
-    color: $font-color-dark;
+    color: $background-color-dark;
     border-radius: $border-radius-card;
-    box-shadow: $box-shadow-card;
-    // background-color: $color-secondary-opaque;
+    box-shadow: $box-shadow;
     text-decoration: none;
-    color: $font-color-dark;
-    background-color: $color-card-dark;
+    color: $button-font-color;
+    background-color: $background-color-tertiary;
     cursor: pointer;
     &:hover {
-      background-color: $color-secondary-transparent;
+      background-color: $background-color-tertiary-hover;
     }
   }
   position: relative;
@@ -53,7 +52,7 @@ main {
         }
       }
       form {
-        box-shadow: $box-shadow-card;
+        box-shadow: $box-shadow;
         border-radius: $border-radius-card;
         border-top: $border-line-soft;
         border-left: $border-line-soft;

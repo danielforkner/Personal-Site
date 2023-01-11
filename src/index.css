@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +45,6 @@ header {
 }
 header .content {
   text-align: center;
-  color: #000000;
   margin: 0 auto;
   max-width: 425px;
   padding: 40px 15px;
@@ -111,7 +113,6 @@ header .background-image {
 #hero-border .border-content-wrapper {
   display: flex;
   align-items: center;
-  color: #000000;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -167,16 +168,16 @@ main .button {
   padding: 0.25rem 0.5rem;
   font-size: 0.95rem;
   font-weight: 400;
-  color: #000000;
+  color: black;
   border-radius: 0.25rem;
   box-shadow: 2px 2px 2px rgb(100, 100, 99);
   text-decoration: none;
-  color: #000000;
-  background-color: #ebeaea;
+  color: white;
+  background-color: rgb(168, 68, 168);
   cursor: pointer;
 }
 main .button:hover {
-  background-color: rgba(192, 200, 208, 0.5);
+  background-color: rgba(168, 68, 168, 0.8);
 }
 main .content {
   position: relative;
@@ -268,7 +269,6 @@ main aside {
   position: relative;
   border-radius: 0.25rem;
   box-shadow: 2px 2px 2px rgb(100, 100, 99);
-  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1px;
   display: grid;
@@ -342,11 +342,6 @@ main aside {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 992px) {
-  #projects-tetris .videos-wrapper .videos .video {
-    height: 350px;
-  }
-}
 #projects-tetris .videos-wrapper .videos .video-links {
   display: flex;
   flex-direction: column-reverse;
@@ -354,11 +349,6 @@ main aside {
   height: 252px;
   overflow: auto;
   background-color: rgb(221, 221, 221);
-}
-@media screen and (min-width: 992px) {
-  #projects-tetris .videos-wrapper .videos .video-links {
-    height: 350px;
-  }
 }
 #projects-tetris .videos-wrapper .videos .video-links .active {
   background-color: rgb(192, 189, 189);
@@ -377,7 +367,6 @@ main aside {
 
 .card {
   margin: 1rem 0;
-  background-color: #ffffff;
   box-shadow: 2px 2px 2px rgb(100, 100, 99);
   border-radius: 0.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
@@ -393,7 +382,7 @@ main aside {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  background-color: #ebeaea;
+  background-color: rgb(203, 200, 200);
 }
 .card .card-header .card-header-text {
   font-size: 1.25rem;
@@ -415,16 +404,16 @@ main aside {
   margin-left: 0.5rem;
   font-size: 0.95rem;
   font-weight: 400;
-  color: #000000;
   border-radius: 0.25rem;
   box-shadow: 2px 2px 2px rgb(100, 100, 99);
+  background-color: rgb(168, 68, 168);
 }
 .card .card-header .card-header-links .card-header-link:hover {
-  background-color: rgba(192, 200, 208, 0.5);
+  background-color: rgba(168, 68, 168, 0.8);
 }
 .card .card-header .card-header-links .card-header-link a {
   text-decoration: none;
-  color: #000000;
+  color: white;
 }
 .card .card-body {
   padding: 2rem;
@@ -482,16 +471,17 @@ aside.fixed {
   display: none;
   z-index: 12;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  background-color: white;
+  box-shadow: 2px 2px 2px rgb(100, 100, 99);
+  background-color: rgb(168, 68, 168);
 }
 .aside-toggle:hover {
-  background-color: rgba(192, 200, 208, 0.5);
+  background-color: rgba(168, 68, 168, 0.8);
 }
 .aside-toggle .line {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #0e2a47;
+  background-color: white;
   transition: 0.2s ease-in-out;
 }
 .aside-toggle.fixed {
@@ -527,30 +517,30 @@ aside.fixed {
     top: 0;
     left: 0;
     overflow: auto;
-    background-color: rgb(192, 200, 208);
+    background-color: white;
     z-index: 10;
   }
 }
 nav {
   margin: 70px 0 0;
-  padding: 0 0 30px 15%;
+  padding: 0 0 30px 20%;
 }
 nav li a {
-  color: #4c5a68;
   font-size: 1.15rem;
+  color: black;
   line-height: 40px;
   text-decoration: none;
 }
 nav li a.active {
   font-weight: 900;
-  color: #8b4a8a;
+  color: rgb(168, 68, 168);
 }
 nav li ul {
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 nav li ul li a {
   margin: 0 0 0 10px;
-  color: #4c5a68;
+  color: black;
   font-size: 1rem;
   line-height: 25px;
   text-decoration: none;

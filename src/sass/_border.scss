@@ -6,7 +6,6 @@
   .border-content-wrapper {
     display: flex;
     align-items: center;
-    color: $font-color-dark;
     width: 100%;
     @include tablet {
       max-width: 768px;

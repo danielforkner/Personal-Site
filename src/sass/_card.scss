@@ -1,8 +1,7 @@
 .card {
   // color: red;
   margin: 1rem 0;
-  background-color: $color-card;
-  box-shadow: $box-shadow-card;
+  box-shadow: $box-shadow;
   border-radius: $border-radius-card;
   border-top: $border-line-soft;
   border-left: $border-line-soft;
@@ -16,7 +15,7 @@
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
     border-bottom: $border-line-soft;
-    background-color: $color-card-dark;
+    background-color: $background-color-secondary;
     .card-header-text {
       font-size: 1.25rem;
       font-weight: 500;
@@ -27,7 +26,7 @@
         // border: $border-line-soft;
       }
       .icon:hover {
-        box-shadow: $box-shadow-card;
+        box-shadow: $box-shadow;
       }
     }
     .card-header-links {
@@ -39,15 +38,16 @@
         margin-left: 0.5rem;
         font-size: 0.95rem;
         font-weight: 400;
-        color: $font-color-dark;
+
         border-radius: $border-radius-card;
-        box-shadow: $box-shadow-card;
+        box-shadow: $box-shadow;
+        background-color: $background-color-tertiary;
         &:hover {
-          background-color: $color-secondary-transparent;
+          background-color: $background-color-tertiary-hover;
         }
         a {
           text-decoration: none;
-          color: $font-color-dark;
+          color: $button-font-color;
         }
       }
     }
@@ -94,7 +94,7 @@
       }
       .tech-icon:hover {
         border-radius: $border-radius-card;
-        box-shadow: $box-shadow-card;
+        box-shadow: $box-shadow;
       }
     }
   }

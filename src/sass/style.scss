@@ -1,7 +1,7 @@
 // animations from animate.style
 // process with the command
 // sass src/sass/style.scss src/index.css --watch
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import 'mixin';
 
 $desktopL: 1200px;
@@ -12,18 +12,17 @@ $mobileL: 425px;
 $mobileM: 375px;
 $mobileS: 320px;
 
-$color-primary: #0e2a47;
-$color-secondary-transparent: rgba(192, 200, 208, 0.5);
-$color-secondary-opaque: rgb(192, 200, 208);
-$color-card: #ffffff;
-$color-card-dark: #ebeaea;
-$font-color-light: #ffffff;
-$font-color-dark: #000000;
-$font-color-secondary-light: #4c5a68;
-$font-color-active: #8b4a8a;
-$box-shadow-card: 2px 2px 2px rgb(100, 100, 99);
-$box-shadow-card-inverse: -2px -2px 2px rgb(100, 100, 99);
-$box-shadow-effect: 2px 2px 2px rgb(255, 170, 0);
+// primary
+$background-color-light: white;
+$background-color-dark: black;
+$background-color-secondary: rgb(203, 200, 200);
+// buttons
+$background-color-tertiary: rgb(168, 68, 168);
+$background-color-tertiary-hover: rgb(168, 68, 168, 0.8);
+$button-font-color: white;
+// secondary
+$box-shadow: 2px 2px 2px rgb(100, 100, 99);
+$box-shadow-glow: 2px 2px 2px rgb(255, 170, 0);
 $border-radius-card: 0.25rem;
 $border-line-soft: 1px solid rgba(0, 0, 0, 0.125);
 
@@ -31,6 +30,10 @@ $border-line-soft: 1px solid rgba(0, 0, 0, 0.125);
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

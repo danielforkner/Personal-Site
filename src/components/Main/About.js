@@ -41,8 +41,8 @@ const About = () => {
           <span className="skill">Communication</span>
         </p>
       </div>
-      <a className="button" href="#contact">
-        Contact Me
+      <a className="button" href="#contact" style={{ fontSize: '.85rem' }}>
+        CONTACT ME
       </a>
     </article>
   );

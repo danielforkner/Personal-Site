@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
+  productionSourceMap: false,
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',

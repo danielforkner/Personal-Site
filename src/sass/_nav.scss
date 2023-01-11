@@ -1,16 +1,16 @@
 nav {
   margin: 70px 0 0;
-  padding: 0 0 30px 15%;
+  padding: 0 0 30px 20%;
   li {
     a {
-      color: $font-color-secondary-light;
       font-size: 1.15rem;
+      color: $background-color-dark;
       line-height: 40px;
       text-decoration: none;
     }
     a.active {
       font-weight: 900;
-      color: $font-color-active;
+      color: $background-color-tertiary;
       // text-decoration: underline $font-color-active-light 2px solid;
     }
     ul {
@@ -18,7 +18,7 @@ nav {
       li {
         a {
           margin: 0 0 0 10px;
-          color: $font-color-secondary-light;
+          color: $background-color-dark;
           // font-weight: 500;
           font-size: 1rem;
           line-height: 25px;
