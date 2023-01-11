@@ -6,7 +6,7 @@ main {
     font-weight: 400;
     color: $background-color-dark;
     border-radius: $border-radius-card;
-    box-shadow: $box-shadow;
+    // box-shadow: $box-shadow;
     text-decoration: none;
     color: $button-font-color;
     background-color: $background-color-tertiary;
@@ -59,6 +59,9 @@ main {
         border-radius: 5px;
         background-color: $background-color-secondary-transparent;
         padding: 20px;
+        .response {
+          margin-top: 1rem;
+        }
         div {
           display: flex;
           flex-direction: column;

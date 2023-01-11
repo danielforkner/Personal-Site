@@ -1,15 +1,16 @@
 // primary
-$background-color-light: white;
+$background-color-light: rgb(245, 243, 243);
 $background-color-dark: rgb(33, 33, 33);
 $background-color-secondary: rgb(203, 200, 200);
 $background-color-secondary-transparent: rgba(203, 200, 200, 0.125);
 $background-color-dark-transparent: rgba(0, 0, 0, 0.5);
 // buttons
 $background-color-tertiary: rgb(168, 68, 168);
-$background-color-tertiary-hover: rgb(168, 68, 168, 0.8);
+$background-color-tertiary-hover: rgba(168, 68, 168, 0.8);
 $button-font-color: white;
-// secondary
-$box-shadow: 2px 2px 2px rgb(100, 100, 99);
+// misc
+$box-shadow: 1px 1px 2px rgb(100, 100, 99);
+$box-shadow-subtle: 1px 1px 1px rgb(100, 100, 99);
 $box-shadow-glow: 2px 2px 2px $background-color-tertiary;
 $border-radius-card: 0.25rem;
 $border-line-soft: 1px solid rgba(126, 126, 126, 0.5);
