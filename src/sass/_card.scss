@@ -6,6 +6,7 @@
   border-top: $border-line-soft;
   border-left: $border-line-soft;
   .card-header {
+    gap: 5px;
     display: flex;
     flex-wrap: wrap;
     border-top-left-radius: $border-radius-card;
@@ -33,10 +34,10 @@
     .card-header-links {
       display: flex;
       align-items: center;
+      gap: 0.5rem;
       .card-header-link {
         border: $border-line-soft;
         padding: 0.25rem 0.5rem;
-        margin-left: 0.5rem;
         font-size: 0.95rem;
         font-weight: 400;
 
