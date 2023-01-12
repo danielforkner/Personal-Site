@@ -7,6 +7,7 @@ const DarkModeBtn = () => {
   const [mode, setMode] = useState(sun);
 
   const handleClick = () => {
+    const asideToggle = document.querySelector('.aside-toggle');
     const aTags = document.querySelectorAll('aside a');
     const body = document.querySelector('body');
     const aside = document.querySelector('aside');
@@ -28,6 +29,7 @@ const DarkModeBtn = () => {
         a.style.color = 'black';
       });
     }
+    asideToggle.classList.remove('active');
     aside.classList.remove('active');
   };
 
