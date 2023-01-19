@@ -1,54 +1,92 @@
-import React from 'react';
-import javascriptSVG from '/public/images/tech-icons/javascript.svg';
-import html5PNG from '/public/images/tech-icons/html5.png';
-import css3PNG from '/public/images/tech-icons/css3.png';
-import chartjsSVG from '/public/images/tech-icons/chartjs.svg';
-import reduxPNG from '/public/images/tech-icons/redux.png';
-import reactPNG from '/public/images/tech-icons/react.png';
-import nodejsPNG from '/public/images/tech-icons/nodejs.png';
-import expressPNG from '/public/images/tech-icons/express.png';
-import postgresPNG from '/public/images/tech-icons/postgresql.png';
-import renderPNG from '/public/images/tech-icons/render.png';
-import bitioPNG from '/public/images/tech-icons/bitio.png';
+import React, { useState } from 'react';
+import javascript from '/public/images/tech-icons/javascript.svg';
+import html5 from '/public/images/tech-icons/html5.png';
+import css3 from '/public/images/tech-icons/css3.png';
+import chartjs from '/public/images/tech-icons/chartjs.svg';
+import redux from '/public/images/tech-icons/redux.png';
+import react from '/public/images/tech-icons/react.png';
+import nodejs from '/public/images/tech-icons/nodejs.png';
+import express from '/public/images/tech-icons/express.png';
+import postgres from '/public/images/tech-icons/postgresql.png';
+import render from '/public/images/tech-icons/render.png';
+import bitio from '/public/images/tech-icons/bitio.png';
+import jwt from '/public/images/tech-icons/jwt.png';
+import jest from '/public/images/tech-icons/jest.png';
 
 const CardTechIcons = ({ project, icons }) => {
+  // look into https://www.joshwcomeau.com/snippets/react-hooks/use-mouse-position/
+  const [hover, setHover] = useState(false);
+  const [hoverMessage, setHoverMessage] = useState('');
   return (
     <div className="tech-icons">
+      {hover && (
+        <div
+          style={{
+            position: 'fixed',
+            top: '0',
+            border: '1px solid black',
+            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            padding: '0 5px',
+          }}
+        >
+          {hoverMessage}
+        </div>
+      )}
       {icons.map((icon, index) => {
         let src;
+        let text;
         switch (icon) {
           case 'javascript':
-            src = javascriptSVG;
+            src = javascript;
+            text = 'JavaScript';
             break;
           case 'html5':
-            src = html5PNG;
+            src = html5;
+            text = 'HTML5';
             break;
           case 'css3':
-            src = css3PNG;
+            src = css3;
+            text = 'CSS3';
             break;
           case 'chartjs':
-            src = chartjsSVG;
+            src = chartjs;
+            text = 'Chart.js';
             break;
           case 'redux':
-            src = reduxPNG;
+            src = redux;
+            text = 'Redux';
             break;
           case 'react':
-            src = reactPNG;
+            src = react;
+            text = 'React';
             break;
           case 'nodejs':
-            src = nodejsPNG;
+            src = nodejs;
+            text = 'Node.js';
             break;
           case 'express':
-            src = expressPNG;
+            src = express;
+            text = 'Express';
             break;
           case 'postgres':
-            src = postgresPNG;
+            src = postgres;
+            text = 'PostgreSQL';
             break;
           case 'render':
-            src = renderPNG;
+            src = render;
+            text = 'Render';
             break;
           case 'bitio':
-            src = bitioPNG;
+            src = bitio;
+            text = 'bit.io';
+            break;
+          case 'jwt':
+            src = jwt;
+            text = 'JSON Web Token';
+            break;
+          case 'jest':
+            src = jest;
+            text = 'Jest';
             break;
         }
         return (
@@ -57,6 +95,13 @@ const CardTechIcons = ({ project, icons }) => {
             className="tech-icon"
             src={src}
             alt="tech icon"
+            onMouseEnter={() => {
+              setHover(true);
+              setHoverMessage(text);
+            }}
+            onMouseLeave={() => {
+              setHover(false);
+            }}
           />
         );
       })}
