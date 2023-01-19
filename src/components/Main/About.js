@@ -26,7 +26,8 @@ const About = () => {
           <span className="skill">React & Redux</span> |{' '}
           <span className="skill">JavaScript</span> |{' '}
           <span className="skill">Node & Express</span> |{' '}
-          <span className="skill">PostgreSQL</span>
+          <span className="skill">PostgreSQL</span> |{' '}
+          <span className="skill">TDD (Jest)</span>
         </p>
         <p>
           <span className="skill-title">Learning:</span>{' '}

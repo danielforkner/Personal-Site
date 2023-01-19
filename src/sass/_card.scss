@@ -82,6 +82,10 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-top: 1rem;
+      .tech-icon-hover {
+        background-color: $background-color-tertiary-hover;
+        color: $background-color-light;
+      }
       .tech-icon {
         height: 50px;
         padding: 2px;
@@ -101,5 +105,15 @@
         box-shadow: $box-shadow;
       }
     }
+  }
+}
+
+// fade out animation
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

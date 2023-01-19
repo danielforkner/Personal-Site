@@ -1,32 +1,37 @@
-import React, { useState } from 'react';
-import javascript from '/public/images/tech-icons/javascript.svg';
-import html5 from '/public/images/tech-icons/html5.png';
-import css3 from '/public/images/tech-icons/css3.png';
-import chartjs from '/public/images/tech-icons/chartjs.svg';
-import redux from '/public/images/tech-icons/redux.png';
-import react from '/public/images/tech-icons/react.png';
-import nodejs from '/public/images/tech-icons/nodejs.png';
-import express from '/public/images/tech-icons/express.png';
-import postgres from '/public/images/tech-icons/postgresql.png';
-import render from '/public/images/tech-icons/render.png';
-import bitio from '/public/images/tech-icons/bitio.png';
-import jwt from '/public/images/tech-icons/jwt.png';
-import jest from '/public/images/tech-icons/jest.png';
+import React, { useState, useRef, useEffect } from 'react';
+import {
+  javascript,
+  html5,
+  css3,
+  chartjs,
+  redux,
+  react,
+  nodejs,
+  express,
+  postgres,
+  render,
+  bitio,
+  jwt,
+  jest,
+} from './images';
 
 const CardTechIcons = ({ project, icons }) => {
-  // look into https://www.joshwcomeau.com/snippets/react-hooks/use-mouse-position/
-  const [hover, setHover] = useState(false);
   const [hoverMessage, setHoverMessage] = useState('');
+  const textPosition = useRef({ x: 0, y: 0 });
+  const hover = useRef(false);
+
   return (
-    <div className="tech-icons">
-      {hover && (
+    <div className="tech-icons" style={{ position: 'relative' }}>
+      {hover.current && (
         <div
+          className="tech-icon-hover"
           style={{
-            position: 'fixed',
-            top: '0',
+            position: 'absolute',
+            top: textPosition.current.y,
+            left: textPosition.current.x,
             border: '1px solid black',
-            backgroundColor: 'rgba(255, 255, 255, 0.9)',
             padding: '0 5px',
+            className: 'tech-icon-hover',
           }}
         >
           {hoverMessage}
@@ -95,12 +100,15 @@ const CardTechIcons = ({ project, icons }) => {
             className="tech-icon"
             src={src}
             alt="tech icon"
-            onMouseEnter={() => {
-              setHover(true);
+            onMouseOver={(ev) => {
+              textPosition.current.x = `${ev.target.offsetLeft + 50}px`;
+              textPosition.current.y = `${ev.target.offsetTop + 50}px`;
+              hover.current = true;
               setHoverMessage(text);
             }}
-            onMouseLeave={() => {
-              setHover(false);
+            onMouseOut={() => {
+              hover.current = false;
+              setHoverMessage('');
             }}
           />
         );
