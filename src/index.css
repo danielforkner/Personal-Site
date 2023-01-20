@@ -486,6 +486,10 @@ main aside {
   gap: 0.5rem;
   margin-top: 1rem;
 }
+.card .card-body .tech-icons .tech-icon-hover {
+  background-color: rgba(168, 68, 168, 0.8);
+  color: rgb(245, 243, 243);
+}
 .card .card-body .tech-icons .tech-icon {
   height: 50px;
   padding: 2px;
@@ -495,6 +499,14 @@ main aside {
   box-shadow: 1px 1px 2px rgb(100, 100, 99);
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 aside {
   width: 20%;
   float: left;

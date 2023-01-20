@@ -1,54 +1,97 @@
-import React from 'react';
-import javascriptSVG from '/public/images/tech-icons/javascript.svg';
-import html5PNG from '/public/images/tech-icons/html5.png';
-import css3PNG from '/public/images/tech-icons/css3.png';
-import chartjsSVG from '/public/images/tech-icons/chartjs.svg';
-import reduxPNG from '/public/images/tech-icons/redux.png';
-import reactPNG from '/public/images/tech-icons/react.png';
-import nodejsPNG from '/public/images/tech-icons/nodejs.png';
-import expressPNG from '/public/images/tech-icons/express.png';
-import postgresPNG from '/public/images/tech-icons/postgresql.png';
-import renderPNG from '/public/images/tech-icons/render.png';
-import bitioPNG from '/public/images/tech-icons/bitio.png';
+import React, { useState, useRef, useEffect } from 'react';
+import {
+  javascript,
+  html5,
+  css3,
+  chartjs,
+  redux,
+  react,
+  nodejs,
+  express,
+  postgres,
+  render,
+  bitio,
+  jwt,
+  jest,
+} from './images';
 
 const CardTechIcons = ({ project, icons }) => {
+  const [hoverMessage, setHoverMessage] = useState('');
+  const textPosition = useRef({ x: 0, y: 0 });
+  const hover = useRef(false);
+
   return (
-    <div className="tech-icons">
+    <div className="tech-icons" style={{ position: 'relative' }}>
+      {hover.current && (
+        <div
+          className="tech-icon-hover"
+          style={{
+            position: 'absolute',
+            top: textPosition.current.y,
+            left: textPosition.current.x,
+            border: '1px solid black',
+            padding: '0 5px',
+            className: 'tech-icon-hover',
+          }}
+        >
+          {hoverMessage}
+        </div>
+      )}
       {icons.map((icon, index) => {
         let src;
+        let text;
         switch (icon) {
           case 'javascript':
-            src = javascriptSVG;
+            src = javascript;
+            text = 'JavaScript';
             break;
           case 'html5':
-            src = html5PNG;
+            src = html5;
+            text = 'HTML5';
             break;
           case 'css3':
-            src = css3PNG;
+            src = css3;
+            text = 'CSS3';
             break;
           case 'chartjs':
-            src = chartjsSVG;
+            src = chartjs;
+            text = 'Chart.js';
             break;
           case 'redux':
-            src = reduxPNG;
+            src = redux;
+            text = 'Redux';
             break;
           case 'react':
-            src = reactPNG;
+            src = react;
+            text = 'React';
             break;
           case 'nodejs':
-            src = nodejsPNG;
+            src = nodejs;
+            text = 'Node.js';
             break;
           case 'express':
-            src = expressPNG;
+            src = express;
+            text = 'Express';
             break;
           case 'postgres':
-            src = postgresPNG;
+            src = postgres;
+            text = 'PostgreSQL';
             break;
           case 'render':
-            src = renderPNG;
+            src = render;
+            text = 'Render';
             break;
           case 'bitio':
-            src = bitioPNG;
+            src = bitio;
+            text = 'bit.io';
+            break;
+          case 'jwt':
+            src = jwt;
+            text = 'JSON Web Token';
+            break;
+          case 'jest':
+            src = jest;
+            text = 'Jest';
             break;
         }
         return (
@@ -57,6 +100,16 @@ const CardTechIcons = ({ project, icons }) => {
             className="tech-icon"
             src={src}
             alt="tech icon"
+            onMouseOver={(ev) => {
+              textPosition.current.x = `${ev.target.offsetLeft + 50}px`;
+              textPosition.current.y = `${ev.target.offsetTop + 50}px`;
+              hover.current = true;
+              setHoverMessage(text);
+            }}
+            onMouseOut={() => {
+              hover.current = false;
+              setHoverMessage('');
+            }}
           />
         );
       })}
