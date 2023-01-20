@@ -4,7 +4,7 @@ This is my personal site to display projects and provide a way to contact me.
 
 ## Tech
 
-Static React website. The email contact form makes a fetch request to a web server I have [deployed here](https://github.com/danielforkner/nodemailer-microservice) which handles the email messaging.
+Static React website. CSS is compiled from SASS. The email contact form makes a fetch request to a web server I have [deployed here](https://github.com/danielforkner/nodemailer-microservice) which handles the email messaging.
 
 ## Link
 
