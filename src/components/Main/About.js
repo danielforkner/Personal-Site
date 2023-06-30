@@ -1,4 +1,7 @@
 import React from 'react';
+import certAAI from '/public/images/about/Cert-AAI.png';
+import certCCP from '/public/images/about/Cert-CCP.png';
+import certSAA from '/public/images/about/Cert-SAA.png';
 
 const About = () => {
   return (
@@ -18,21 +21,21 @@ const About = () => {
           target="_blank"
           alt="AWS Cert"
         >
-          <img src="/public/images/about/Cert-AAI.png" width="100" />
+          <img src={certAAI} width="100" />
         </a>
         <a
           href="https://www.credly.com/badges/ca61f1fc-3432-4580-825c-1205134b9857"
           target="_blank"
           alt="AWS Cert"
         >
-          <img src="/public/images/about/Cert-SAA.png" width="100" />
+          <img src={certSAA} width="100" />
         </a>
         <a
           href="https://www.credly.com/badges/9f3ab7d5-2408-499e-bb86-7f8bcbb6d94e"
           target="_blank"
           alt="AWS Cert"
         >
-          <img src="/public/images/about/Cert-CCP.png" width="100" />
+          <img src={certCCP} width="100" />
         </a>
       </div>
       {/* <p>
