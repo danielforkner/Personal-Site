@@ -18,21 +18,21 @@ const About = () => {
           target="_blank"
           alt="AWS Cert"
         >
-          <img src="/images/about/Cert-AAI.png" width="100" />
+          <img src="/public/images/about/Cert-AAI.png" width="100" />
         </a>
         <a
           href="https://www.credly.com/badges/ca61f1fc-3432-4580-825c-1205134b9857"
           target="_blank"
           alt="AWS Cert"
         >
-          <img src="/images/about/Cert-SAA.png" width="100" />
+          <img src="/public/images/about/Cert-SAA.png" width="100" />
         </a>
         <a
           href="https://www.credly.com/badges/9f3ab7d5-2408-499e-bb86-7f8bcbb6d94e"
           target="_blank"
           alt="AWS Cert"
         >
-          <img src="/images/about/Cert-CCP.png" width="100" />
+          <img src="/public/images/about/Cert-CCP.png" width="100" />
         </a>
       </div>
       {/* <p>
