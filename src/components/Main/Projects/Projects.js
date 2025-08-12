@@ -11,11 +11,11 @@ const Projects = () => {
       <h2>Projects</h2>
 
       <div className="contents">
-        <CompaniesAPI />
+        {/* <CompaniesAPI /> */}
         <Algovisualizer />
-        <Deployment />
         <Tetris />
         <Snake />
+        {/* <Deployment /> */}
       </div>
     </article>
   );
