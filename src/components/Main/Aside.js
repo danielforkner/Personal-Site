@@ -76,14 +76,14 @@ const Aside = () => {
                 Projects
               </a>
               <ul>
-                <li>
+                {/* <li>
                   <a
                     href="#projects-companiesapi"
                     onClick={(e) => handleToggle(e, true)}
                   >
                     Companies API
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="#projects-algovisualizer"
@@ -92,14 +92,14 @@ const Aside = () => {
                     Algovisualizer
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#projects-deployment"
                     onClick={(e) => handleToggle(e, true)}
                   >
                     Deployment Guide
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a href="#Projects-Podcast">Educational Podcast</a>
                 </li> */}

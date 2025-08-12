@@ -1,39 +1,40 @@
 import React, { useState, useRef } from 'react';
 
 const ContactForm = () => {
-  const [status, setStatus] = useState('Submit');
-  const [response, setResponse] = useState(null);
-  const formName = useRef(null);
-  const formEmail = useRef(null);
-  const formMessage = useRef(null);
+  // const [status, setStatus] = useState('Submit');
+  // const [response, setResponse] = useState(null);
+  // const formName = useRef(null);
+  // const formEmail = useRef(null);
+  // const formMessage = useRef(null);
 
-  const handleSubmit = async (e) => {
-    setResponse(null);
-    e.preventDefault();
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: formName.current.value,
-      email: formEmail.current.value,
-      message: formMessage.current.value,
-    };
-    console.log(details);
-    fetch('https://nodemailer-myf1.onrender.com/danielforkner', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(details),
-    });
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
-    setResponse('Thanks for your message!');
-  };
+  // const handleSubmit = async (e) => {
+  //   setResponse(null);
+  //   e.preventDefault();
+  //   const { name, email, message } = e.target.elements;
+  //   let details = {
+  //     name: formName.current.value,
+  //     email: formEmail.current.value,
+  //     message: formMessage.current.value,
+  //   };
+  //   console.log(details);
+  //   fetch('https://nodemailer-myf1.onrender.com/danielforkner', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(details),
+  //   });
+  //   document.getElementById('name').value = '';
+  //   document.getElementById('email').value = '';
+  //   document.getElementById('message').value = '';
+  //   setResponse('Thanks for your message!');
+  // };
 
   return (
     <article id="contact">
       <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
+      <p>Contact me at daniel.forkner@gmail.com</p>
+      {/* <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input ref={formName} type="text" id="name" required />
@@ -50,7 +51,7 @@ const ContactForm = () => {
           {status}
         </button>
         {response && <div className="response">{response}</div>}
-      </form>
+      </form> */}
     </article>
   );
 };
