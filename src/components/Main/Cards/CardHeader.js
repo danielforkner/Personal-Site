@@ -11,7 +11,7 @@ const CardHeader = ({ data }) => {
       <ul className="card-header-links">
         <li className="card-header-link">
           <a href={deploy} target="_blank">
-            Deploy
+            Visit
           </a>
         </li>
         <li className="card-header-link">
