@@ -13,7 +13,7 @@ const Algovisualizer = () => {
       <CardHeader
         data={{
           icon: icon,
-          title: 'Algovisualizer',
+          title: 'Algovisualizer - 2022',
           deploy: 'https://algovisualized.netlify.app/',
           github: 'https://github.com/danielforkner/algovisualizer',
         }}

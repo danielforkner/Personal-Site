@@ -13,7 +13,7 @@ const Snake = () => {
       <CardHeader
         data={{
           icon: icon,
-          title: 'Snake',
+          title: 'Snake - 2022',
           deploy: 'https://danielforkner.github.io/snake-the-game/',
           github: 'https://github.com/danielforkner/snake-the-game',
         }}

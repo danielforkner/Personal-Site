@@ -14,7 +14,7 @@ const Tetris = () => {
       <CardHeader
         data={{
           icon: icon,
-          title: 'Tetris',
+          title: 'Tetris - 2023',
           deploy: 'https://danielforkner.github.io/tetris/',
           github: 'https://github.com/danielforkner/tetris',
         }}
