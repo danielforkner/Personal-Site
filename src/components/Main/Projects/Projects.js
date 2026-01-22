@@ -4,6 +4,8 @@ import Algovisualizer from './Algovisualizer';
 import CompaniesAPI from './CompaniesAPI';
 import Deployment from './Deployment';
 import Snake from './Snake';
+import Train from './Train';
+import Finance from './Finance';
 
 const Projects = () => {
   return (
@@ -11,6 +13,8 @@ const Projects = () => {
       <h2>Projects</h2>
 
       <div className="contents">
+        <Train />
+        <Finance />
         {/* <CompaniesAPI /> */}
         <Algovisualizer />
         <Tetris />

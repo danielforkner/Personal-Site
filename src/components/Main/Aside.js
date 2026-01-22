@@ -76,6 +76,22 @@ const Aside = () => {
                 Projects
               </a>
               <ul>
+                <li>
+                  <a
+                    href="#projects-train"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Workout Tracker
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#projects-finance"
+                    onClick={(e) => handleToggle(e, true)}
+                  >
+                    Personal Finance
+                  </a>
+                </li>
                 {/* <li>
                   <a
                     href="#projects-companiesapi"

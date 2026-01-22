@@ -8,4 +8,4 @@ Static React website. CSS is compiled from SASS. The email contact form makes a 
 
 ## Link
 
-[danielforkner.netlify.app](https://danielforkner.netlify.app/)
+[danielforkner.com](https://danielforkner.com/)

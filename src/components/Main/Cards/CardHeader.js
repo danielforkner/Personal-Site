@@ -14,11 +14,13 @@ const CardHeader = ({ data }) => {
             Visit
           </a>
         </li>
-        <li className="card-header-link">
-          <a href={github} target="_blank">
-            GitHub
-          </a>
-        </li>
+        {github && (
+          <li className="card-header-link">
+            <a href={github} target="_blank">
+              GitHub
+            </a>
+          </li>
+        )}
       </ul>
     </div>
   );

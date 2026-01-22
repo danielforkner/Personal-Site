@@ -13,6 +13,12 @@ import {
   bitio,
   jwt,
   jest,
+  docker,
+  mysql,
+  nextjs,
+  drizzle,
+  betterauth,
+  mcp,
 } from './images';
 
 const CardTechIcons = ({ project, icons }) => {
@@ -92,6 +98,30 @@ const CardTechIcons = ({ project, icons }) => {
           case 'jest':
             src = jest;
             text = 'Jest';
+            break;
+          case 'docker':
+            src = docker;
+            text = 'Docker';
+            break;
+          case 'mysql':
+            src = mysql;
+            text = 'MySQL';
+            break;
+          case 'nextjs':
+            src = nextjs;
+            text = 'Next.js';
+            break;
+          case 'drizzle':
+            src = drizzle;
+            text = 'Drizzle ORM';
+            break;
+          case 'betterauth':
+            src = betterauth;
+            text = 'Better Auth';
+            break;
+          case 'mcp':
+            src = mcp;
+            text = 'Model Context Protocol';
             break;
         }
         return (
