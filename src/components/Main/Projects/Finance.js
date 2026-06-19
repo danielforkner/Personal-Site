@@ -35,10 +35,7 @@ const Finance = () => {
           }}
         />
 
-        <CardImgGrid
-          overlays={[icon]}
-          images={[screenshot1, screenshot2]}
-        />
+        <CardImgGrid images={[screenshot1, screenshot2]} />
       </div>
     </div>
   );

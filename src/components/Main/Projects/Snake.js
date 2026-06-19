@@ -34,7 +34,7 @@ const Snake = () => {
             icons: ['javascript', 'html5', 'css3'],
           }}
         />
-        <CardImgGrid overlays={[icon]} images={[snake1, snake2, snake3]} />
+        <CardImgGrid overlays={[icon]} images={[snake1, snake2]} />
       </div>
     </div>
   );

@@ -35,10 +35,7 @@ const Train = () => {
           }}
         />
 
-        <CardImgGrid
-          overlays={[icon]}
-          images={[screenshot1, screenshot2, screenshot3]}
-        />
+        <CardImgGrid images={[screenshot1, screenshot2, screenshot3]} />
       </div>
     </div>
   );

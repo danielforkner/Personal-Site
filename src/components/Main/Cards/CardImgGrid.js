@@ -8,15 +8,17 @@ const CardImgGrid = ({ overlays, images, icons }) => {
         {images.map((image, index) => {
           return (
             <div className="item" key={image}>
-              <div
-                className="overlay"
-                style={{
-                  background: `url(${
-                    overlays.length > 1 ? overlays[index] : overlays[0]
-                  })`,
-                  backgroundSize: 'cover',
-                }}
-              ></div>
+              {overlays && overlays.length > 0 && (
+                <div
+                  className="overlay"
+                  style={{
+                    background: `url(${
+                      overlays.length > 1 ? overlays[index] : overlays[0]
+                    })`,
+                    backgroundSize: 'cover',
+                  }}
+                ></div>
+              )}
               <img src={image} alt={`screenshot ${index + 1} of the project`} />
             </div>
           );
